@@ -1,75 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 :root {
     --primary-bg-color: rgb(38, 50, 56);
     --secondary-bg-color: rgb(25, 34, 39);
     --hover-hightlight-color: rgb(255, 112, 66);
     --primary-text-color: rgb(93, 119, 132);
-}
-
-.side-bar {
-    padding-top: 55px;
-    padding-bottom: 40px;
-    background: var(--secondary-bg-color);
-    position: fixed;
-    left:0px;
-    width: 250px;
-    height: 100%;
-    text-align: center;
-    color: var(--hover-hightlight-color);
-    transition: left 0.5s;
-}
-
-.side-bar .profile-picture{
-    widows: 130px;
-    height: 130px;
-    border-radius: 130px;
-    margin-bottom: 10px;
-}
-
-.side-bar h4 {
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.side-bar a {
-    display: block;
-    width: 100%;
-    line-height: 60px;
-    text-decoration: none;
-    color: var(--primary-text-color);
-    transition: 0.7s;
-    transition-property: background, color;
-}
-
-.side-bar a:hover {
-    background: var(--primary-bg-color);
-    color: var(--hover-hightlight-color);
-}
-
-.hide-collabs {
-    transition: display 1s;   
-}
-
-.checkbox {
-    display: none;
-}
-
-.checkbox-label {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.checkbox-label .tab-icon {
-    width: 25px;
-    height: 25px;
-    z-index: 1;
-    color: var(--primary-text-color)
-}
-
-.checkbox-label .tab-icon:hover {
-    color: var(--hover-hightlight-color);
-    transition: color 0.5s;
+    --default-font: 'Inconsolata';
 }
 
 #check:checked ~ .side-bar {
@@ -82,13 +18,4 @@
 
 #check:checked ~ .content-box {
     margin-left: 50px;
-}
-
-.content-box {
-    background: var(--primary-bg-color);
-    min-height: 100vh;
-    margin-left: 250px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    transition: margin-left 0.5s;
 }

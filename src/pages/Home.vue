@@ -54,4 +54,8 @@ export default {
   background-color: var(--primary-bg-color);
   display: inline-block;
 }
+
+.checkbox {
+    display: none;
+}
 </style>
