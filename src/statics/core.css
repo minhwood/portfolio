@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+:root {
+    --primary-bg-color: rgb(38, 50, 56);
+    --secondary-bg-color: rgb(25, 34, 39);
+    --hover-hightlight-color: rgb(255, 112, 66);
+    --primary-text-color: rgb(93, 119, 132);
+    --default-font: 'Inconsolata';
+}
+
+#check:checked ~ .side-bar {
+    left: -200px;
+}
+
+#check:checked ~ .side-bar .hide-collabs {
+    display: none;
+}
+
+#check:checked ~ .content-box {
+    margin-left: 50px;
+}
