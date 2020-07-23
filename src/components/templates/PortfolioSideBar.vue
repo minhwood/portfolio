@@ -41,15 +41,35 @@ export default {
     padding-bottom: 40px;
     background: var(--secondary-bg-color);
     position: fixed;
-    left:0px;
     width: 250px;
     height: 100%;
     text-align: center;
     color: var(--hover-hightlight-color);
-    transition: left 0.5s;
+    transition: left 0.5s ease-in;
+    animation: transitionIn 1s;
+    left:0px;
 }
 
 .hide-collabs {
     transition: display 1s;   
+}
+
+@keyframes transitionIn {
+    from {
+        left: -250px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@media(max-width:568px) {
+    .side-bar {
+        left: -200px !important;
+    }
+
+    .hide-collabs {
+        display:none;
+    }
 }
 </style>

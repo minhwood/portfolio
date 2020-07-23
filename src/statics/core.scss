@@ -5,6 +5,7 @@
     --secondary-bg-color: rgb(25, 34, 39);
     --hover-hightlight-color: rgb(255, 112, 66);
     --primary-text-color: rgb(93, 119, 132);
+    --secondary-text-color: #fff;
     --default-font: 'Inconsolata';
 }
 
@@ -18,4 +19,18 @@
 
 #check:checked ~ .content-box {
     margin-left: 50px;
+}
+
+@media(max-width:568px) {
+    #check:checked ~ .side-bar {
+        left: 0px !important;
+    }
+
+    #check:checked ~ .side-bar .hide-collabs {
+        display: block;
+    }
+
+    #check:checked ~ .content-box {
+        margin-left: 250px !important;
+    }
 }

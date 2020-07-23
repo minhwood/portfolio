@@ -14,6 +14,6 @@ p {
     margin-top: 0px;
     font-family: var(--default-font);
     font-size: 15px;
-    color: #fff;
+    color: var(--secondary-text-color);
 }
 </style>
