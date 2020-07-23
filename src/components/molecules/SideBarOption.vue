@@ -28,6 +28,6 @@ a {
 
 a:hover {
     background: var(--primary-bg-color);
-    color: var(--hover-hightlight-color);
+    color: var(--secondary-text-color);
 }
 </style>
