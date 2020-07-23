@@ -10,7 +10,8 @@ export default {
         this.observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.intersectionRatio > 0) {
-                    console.log("top", entry)
+                    let id = entry.target.id
+                    this.$emit("change_tab", id)
                 }
             })
         }, {rootMargin: "0px 0px -99% 0px"})

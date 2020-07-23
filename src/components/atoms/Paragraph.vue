@@ -16,5 +16,6 @@ p {
     color: var(--secondary-text-color);
     font-size: 20px;
     font-family: var(--default-font);
+    margin-bottom:30px;
 }
 </style>

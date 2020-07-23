@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 :root {
     --primary-bg-color: rgb(38, 50, 56);
     --secondary-bg-color: rgb(25, 34, 39);
@@ -38,7 +42,8 @@
 .part-container {
     height: 100%;
     min-height: 40vh;
-    margin-top: 20px;
+    margin-top: 0px;
+    padding-top: 100px !important;
     margin-bottom: 20px;
     padding: 30px;
     color: var(--secondary-text-color);

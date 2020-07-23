@@ -2,8 +2,8 @@
     <div>
         <input class="checkbox" type="checkbox" id="check">
         <div class="background"></div>
-        <portfolio-side-bar></portfolio-side-bar>
-        <portfolio-content></portfolio-content>
+        <portfolio-side-bar v-on:change_tab=change_active_tab :active_tab=active_tab />
+        <portfolio-content v-on:change_tab=change_active_tab />
     </div>
 </template>
 
@@ -16,6 +16,16 @@ export default {
     components: {
         PortfolioSideBar,
         PortfolioContent
+    },
+    data () {
+        return {
+            active_tab: "about"
+        }
+    },
+    methods: {
+        change_active_tab(tab) {
+            this.active_tab = tab     
+        },
     }
 }
 </script>
