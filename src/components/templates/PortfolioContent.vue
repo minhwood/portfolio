@@ -1,6 +1,7 @@
 <template>
     <div class="content-box">
         <div class="container">
+            <Observer/>
             <about/>
             <experiences/>
             <educations/>
@@ -17,6 +18,7 @@ import Educations from '../organisms/Educations'
 import Skills from '../organisms/Skills'
 import Activities from '../organisms/Activities'
 import Playground from '../organisms/Playground' 
+import Observer from '../atoms/Observer'
 
 export default {
     name:'PortfolioContent',
@@ -26,7 +28,11 @@ export default {
         Playground,
         Educations,
         Skills,
-        Activities
+        Activities,
+        Observer
+    },
+    methods: {
+
     }
 }
 </script>

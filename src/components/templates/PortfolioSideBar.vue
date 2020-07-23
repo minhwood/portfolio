@@ -30,7 +30,6 @@ export default {
     },
     methods: {
         option_click() {
-            //to be implement
             console.log("option clicked")
         }
     }
