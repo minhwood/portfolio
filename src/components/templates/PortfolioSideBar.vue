@@ -4,12 +4,13 @@
         <div class="hide-collabs">
             <avatar src="avatar.jpg"/>
             <person-title name="Minh Doan Quang" jobtitle="Web Developer of Wonder Land"/>
-            <side-bar-option v-on:onclick=option_click text="About Me"/>
-            <side-bar-option v-on:onclick=option_click text="Experiences"/>
-            <side-bar-option v-on:onclick=option_click text="Educations"/>
-            <side-bar-option v-on:onclick=option_click text="Skills"/>
-            <side-bar-option v-on:onclick=option_click text="Activities"/>
-            <side-bar-option v-on:onclick=option_click text="Contacts"/>
+            <side-bar-option v-on:onclick=option_click section_id="#about" class="active" text="About"/>
+            <side-bar-option v-on:onclick=option_click section_id="#experiences" text="Experiences"/>
+            <side-bar-option v-on:onclick=option_click section_id="#educations" text="Educations"/>
+            <side-bar-option v-on:onclick=option_click section_id="#skills" text="Skills"/>
+            <side-bar-option v-on:onclick=option_click section_id="#activities" text="Activities"/>
+            <side-bar-option v-on:onclick=option_click section_id="#contacts" text="Contacts"/>
+            <side-bar-option v-on:onclick=option_click section_id="#playground" text="Playground"/>
         </div>
     </div>
 </template>

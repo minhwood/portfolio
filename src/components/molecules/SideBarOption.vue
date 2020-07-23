@@ -1,11 +1,12 @@
 <template>
-    <a href="#" v-on:click=onclick>{{ text }}</a>
+    <a :href=section_id v-on:click=onclick>{{ text }}</a>
 </template>
 <script>
 export default {
     name:'SideBarOption',
     props: {
-        text: String
+        text: String,
+        section_id: String
     },
     methods: {
         onclick() {
@@ -29,5 +30,10 @@ a {
 a:hover {
     background: var(--primary-bg-color);
     color: var(--secondary-text-color);
+}
+
+.active {
+    background: var(--primary-bg-color);
+    color: var(--hover-hightlight-color);
 }
 </style>

@@ -1,16 +1,33 @@
 <template>
     <div class="content-box">
         <div class="container">
-            <div class="temp-div"></div>
-            <div class="temp-div"></div>
-            <div class="temp-div"></div>        
+            <about/>
+            <experiences/>
+            <educations/>
+            <skills/>
+            <activities/>
+            <playground/>
         </div>
     </div>
 </template>
 <script>
+import About from '../organisms/About'
+import Experiences from '../organisms/Experiences'
+import Educations from '../organisms/Educations'
+import Skills from '../organisms/Skills'
+import Activities from '../organisms/Activities'
+import Playground from '../organisms/Playground' 
+
 export default {
     name:'PortfolioContent',
-    components: {}
+    components: {
+        About,
+        Experiences,
+        Playground,
+        Educations,
+        Skills,
+        Activities
+    }
 }
 </script>
 <style scoped>
@@ -18,21 +35,24 @@ export default {
     background: var(--primary-bg-color);
     min-height: 100vh;
     margin-left: 250px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     transition: margin-left 0.5s ease-in;
-}
-
-.temp-div {
-    background: var(--secondary-bg-color);
-    min-height: 40vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    animation: transitionIn 1s;
 }
 
 @media(max-width:568px) {
     .content-box {
         margin-left: 50px !important;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        margin-left: 100vh;
+    }
+    to {
+        margin-left: 250px;
     }
 }
 </style>
