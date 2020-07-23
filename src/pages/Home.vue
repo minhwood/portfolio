@@ -30,6 +30,7 @@ export default {
     position: fixed;
     left:0;
     top:0;
+    background-color: var(--primary-bg-color);
 }
 
 .background {

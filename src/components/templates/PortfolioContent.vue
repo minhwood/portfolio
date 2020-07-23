@@ -20,7 +20,7 @@ export default {
     margin-left: 250px;
     padding-top: 40px;
     padding-bottom: 40px;
-    transition: margin-left 0.5s;
+    transition: margin-left 0.5s ease-in;
 }
 
 .temp-div {
@@ -28,5 +28,11 @@ export default {
     min-height: 40vh;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media(max-width:568px) {
+    .content-box {
+        margin-left: 50px !important;
+    }
 }
 </style>
