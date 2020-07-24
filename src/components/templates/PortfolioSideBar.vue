@@ -4,12 +4,13 @@
         <div class="hide-collabs">
             <avatar src="avatar.jpg"/>
             <person-title name="Minh Doan Quang" jobtitle="Web Developer of Wonder Land"/>
-            <side-bar-option v-on:onclick=option_click text="About Me"/>
-            <side-bar-option v-on:onclick=option_click text="Experiences"/>
-            <side-bar-option v-on:onclick=option_click text="Educations"/>
-            <side-bar-option v-on:onclick=option_click text="Skills"/>
-            <side-bar-option v-on:onclick=option_click text="Activities"/>
-            <side-bar-option v-on:onclick=option_click text="Contacts"/>
+            <side-bar-option v-on:onclick=option_click :current_active_tab=active_tab section_id="about" text="About"/>
+            <side-bar-option v-on:onclick=option_click :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
+            <side-bar-option v-on:onclick=option_click :current_active_tab=active_tab section_id="educations" text="Educations"/>
+            <side-bar-option v-on:onclick=option_click :current_active_tab=active_tab section_id="skills" text="Skills"/>
+            <side-bar-option v-on:onclick=option_click :current_active_tab=active_tab section_id="activities" text="Activities"/>
+            <side-bar-option v-on:onclick=option_click :current_active_tab=active_tab section_id="contacts" text="Contacts"/>
+            <side-bar-option v-on:onclick=option_click :current_active_tab=active_tab section_id="playground" text="Playground"/>
         </div>
     </div>
 </template>
@@ -21,6 +22,9 @@ import PersonTitle from '../molecules/PersonTitle'
 
 export default {
     name:'PortfolioSideBar',
+    props: {
+        active_tab: String
+    },
     components: {
         Avatar,
         CollabTriggerButton,
@@ -28,9 +32,8 @@ export default {
         PersonTitle
     },
     methods: {
-        option_click() {
-            //to be implement
-            console.log("option clicked")
+        option_click(tab) {
+            this.$emit('change_tab', tab)
         }
     }
 }
