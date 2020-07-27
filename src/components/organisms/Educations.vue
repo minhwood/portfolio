@@ -13,6 +13,7 @@
 <script>
 import Header from '../molecules/Header'
 import EducationBox from '../molecules/EducationBox'
+import { bus } from '../../main'
 
 export default {
     name:'Educations',
@@ -40,6 +41,9 @@ export default {
             if (this.active_box === box) this.active_box = -1
             else this.active_box = box
         }
+    },
+    created () {
+        bus.$on('change_box', (box_id) => this.change_box(box_id))
     }
 }
 </script>

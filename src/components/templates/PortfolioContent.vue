@@ -1,12 +1,11 @@
 <template>
     <div class="content-box">
         <div class="container">
-            <Observer v-on:change_tab=change_tab />
+            <Observer/>
             <about/>
             <experiences/>
             <educations/>
             <skills/>
-            <activities/>
             <contacts/>
             <playground/>
         </div>
@@ -17,7 +16,6 @@ import About from '../organisms/About'
 import Experiences from '../organisms/Experiences'
 import Educations from '../organisms/Educations'
 import Skills from '../organisms/Skills'
-import Activities from '../organisms/Activities'
 import Contacts from '../organisms/Contacts'
 import Playground from '../organisms/Playground' 
 import Observer from '../atoms/Observer'
@@ -29,16 +27,10 @@ export default {
         Experiences,
         Educations,
         Skills,
-        Activities,
         Contacts,
         Playground,
         Observer
     },
-    methods: {
-        change_tab(tab) {
-            this.$emit("change_tab", tab)
-        }
-    }
 }
 </script>
 <style scoped>
@@ -51,7 +43,7 @@ export default {
     animation: transitionIn 0.8s;
 }
 
-@media(max-width:568px) {
+@media(max-width:768px) {
     .content-box {
         margin-left: 50px !important;
     }

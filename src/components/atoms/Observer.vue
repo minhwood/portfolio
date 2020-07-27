@@ -2,6 +2,8 @@
     <div class="observer"/>
 </template>
 <script>
+import { bus } from '../../main'
+
 export default {
     data: () => ({
         observer: null
@@ -11,7 +13,7 @@ export default {
             entries.forEach((entry) => {
                 if (entry.intersectionRatio > 0) {
                     let id = entry.target.id
-                    this.$emit("change_tab", id)
+                    bus.$emit("change_tab", id)
                 }
             })
         }, {rootMargin: "0px 0px -99% 0px"})
