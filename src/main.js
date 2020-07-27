@@ -4,13 +4,13 @@ import App from './App.vue'
 import router from './routes'
 import './statics/core.scss'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faInfo, faHighlighter } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faInfo, faHighlighter, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-library.add(faBars, faInfo, faHighlighter)
+library.add(faBars, faInfo, faHighlighter, faPlus, faMinus)
 Vue.use(VueRouter, BootstrapVue)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
