@@ -1,12 +1,23 @@
 <template>
-  <p>{{paragraph}}</p>
+  <p :style=actually_margin_bottom>{{paragraph}}</p>
 </template>
 
 <script>
 export default {
     name:'Paragraph',
     props: {
-        paragraph: String
+        paragraph: String,
+        margin_bottom: {
+            type: String,
+            default: "0.5rem"
+        }
+    },
+    computed: {
+        actually_margin_bottom() {
+            return {
+                "margin-bottom": this.margin_bottom
+            }
+        }
     }
 }
 </script>
@@ -14,8 +25,8 @@ export default {
 <style scoped>
 p {
     font-size: 16px;
-    margin-bottom:30px;
     animation: transitionIn 3s;
+    text-align:justify;
 }
 
 
