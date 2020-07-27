@@ -12,10 +12,9 @@ export default {
 </script>
 <style scoped>
 .header-text {
-    color: rgb(137,221,255);
+    color: var(--header-primary-text-color);
     padding-bottom: 10px;
     font-size: 24px;
-    font-family: var(--default-font);
     margin:0px;
 }
 </style>

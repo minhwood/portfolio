@@ -46,10 +46,9 @@ export default {
     background: var(--primary-bg-color);
     min-height: 100vh;
     margin-left: 250px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    transition: margin-left 0.5s ease-in;
-    animation: transitionIn 1s;
+    padding: 5px 120px 5px 120px;
+    transition: margin-left 0.5s linear;
+    animation: transitionIn 0.8s;
 }
 
 @media(max-width:568px) {
@@ -58,12 +57,18 @@ export default {
     }
 }
 
+@media(max-width:1200px) {
+    .content-box {
+        padding: 5px 0px 5px 0px;
+    }
+}
+
 @keyframes transitionIn {
     from {
-        margin-left: 100vh;
+        opacity: 0;
     }
     to {
-        margin-left: 250px;
+        opacity: 1;
     }
 }
 </style>

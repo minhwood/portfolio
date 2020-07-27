@@ -12,7 +12,6 @@ export default {
 <style scoped>
 h5 {
     margin-top: 0px;
-    font-family: var(--default-font);
     font-weight: bold;
 }
 </style>

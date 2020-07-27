@@ -13,9 +13,18 @@ export default {
 
 <style scoped>
 p {
-    color: var(--secondary-text-color);
-    font-size: 20px;
-    font-family: var(--default-font);
+    font-size: 16px;
     margin-bottom:30px;
+    animation: transitionIn 3s;
+}
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 </style>
