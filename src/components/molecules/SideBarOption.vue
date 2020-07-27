@@ -26,7 +26,7 @@ export default {
 <style scoped>
 span {
     width: 100%;
-    transition: 0.7s;
+    transition: 0.5s;
     transition-property: border-bottom;
 }
 
@@ -35,14 +35,14 @@ a {
     width: 100%;
     line-height: 60px;
     text-decoration: none;
-    color: var(--primary-text-color);
-    transition: 0.7s;
+    color: var(--secondary-text-color);
+    transition: 0.5s;
     transition-property: background, color;
 }
 
 a:hover {
     background: var(--primary-bg-color);
-    color: var(--secondary-text-color);
+    color: var(--default-text-color);
     text-decoration: none
 }
 

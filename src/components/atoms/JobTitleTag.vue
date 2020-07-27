@@ -12,8 +12,7 @@ export default {
 <style scoped>
 p {
     margin-top: 0px;
-    font-family: var(--default-font);
     font-size: 15px;
-    color: var(--secondary-text-color);
+    color: var(--default-text-color);
 }
 </style>

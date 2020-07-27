@@ -24,7 +24,7 @@ export default {
     width: 25px;
     height: 25px;
     z-index: 1;
-    color: var(--primary-text-color)
+    color: var(--secondary-text-color)
 }
 
 .checkbox-label .tab-icon:hover {

@@ -8,9 +8,12 @@ html {
     --primary-bg-color: rgb(38, 50, 56);
     --secondary-bg-color: rgb(25, 34, 39);
     --hover-hightlight-color: rgb(255, 112, 66);
-    --primary-text-color: rgb(93, 119, 132);
-    --secondary-text-color: #fff;
-    --default-font: 'Inconsolata';
+    --default-text-color: #fff;
+    --header-primary-text-color: rgb(137,221,255);
+    --header-secondary-text-color: rgb(195, 232, 141);
+    --header-third-text-color: rgb(234, 111, 118);
+    --secondary-text-color: rgb(93, 119, 132);
+    --default-font: 'Roboto Mono', monospace;
 }
 
 #check:checked ~ .side-bar {
@@ -46,6 +49,6 @@ html {
     padding-top: 100px !important;
     margin-bottom: 20px;
     padding: 30px;
-    color: var(--secondary-text-color);
+    color: var(--default-text-color);
     font-size: 20px;
 }
