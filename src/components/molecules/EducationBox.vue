@@ -1,6 +1,6 @@
 <template>
     <div class="education-box container">
-        <div class="education-header row" :style=background_color>
+        <div class="education-header row" :style=background_color @click=change_box >
             <div class="col-11">
                 <div class="school-header">{{school}}</div>
                 <div class="qualification-header" >{{qualification}}</div>
@@ -44,6 +44,11 @@ export default {
         display_content() {
             return this.is_active ? "display:block" : "display:none"
         }
+    },
+    methods: {
+        change_box() {
+            this.$emit('change_box', this.$vnode.key)
+        }
     }
 }
 </script>
@@ -51,6 +56,7 @@ export default {
 <style scoped>
 .education-box {
     margin-bottom: 10px;
+    transition: 0.2s;
 }
 
 .education-header {
@@ -85,6 +91,18 @@ export default {
     border: 2px solid var(--secondary-bg-color);
     padding: 20px;
     margin-top: 10px;
+    animation: transitionOpen 0.2s;
+}
+
+@keyframes transitionOpen {
+    from {
+        opacity: 0;
+        display: none;
+    }
+    to {
+        opacity: 1;
+        display: block;
+    }
 }
 
 

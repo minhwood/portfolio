@@ -5,6 +5,8 @@
             :school=education.school
             :qualification=education.qualification
             :descriptions=temporary_text
+            :is_active=is_active(index)
+            v-on:change_box=change_box
         />
     </section>
 </template>
@@ -27,8 +29,18 @@ export default {
         educations: [
             { school: "ROYAL MELBOURNE INSTITUITION OF TECHNOLOGY", qualification: "Bachelor of Information Technology", descriptions: ""},
             { school: "HIGHSCHOOL FOR GIFTED STUDENT - HNUE", qualification: "Graduated in Major of Computer Science", descriptions: "" }
-        ]
-    })
+        ],
+        active_box: -1
+    }),
+    methods: {
+        is_active(box) {
+            return box === this.active_box
+        },
+        change_box(box) {
+            if (this.active_box === box) this.active_box = -1
+            else this.active_box = box
+        }
+    }
 }
 </script>
 <style scoped>
