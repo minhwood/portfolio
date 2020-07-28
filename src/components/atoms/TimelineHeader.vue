@@ -66,7 +66,7 @@ export default {
     bottom: 8px;
 }
 
-@media(max-width:568px) {
+@media(max-width:768px) {
     .timeline-header {
         display: none;
     }

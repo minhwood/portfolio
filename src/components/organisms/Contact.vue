@@ -4,9 +4,9 @@
         <p>+84888610998</p>
         <p>dquangminh98@gmail.com</p>
         <span><font-awesome-icon icon="linkedin"/></span>
-        <a href="https://www.facebook.com/taksraj/" class="contact-icons"><font-awesome-icon :icon="[ 'fab', 'linkedin' ]"/></a>
-        <a href="https://www.linkedin.com/in/doanquangminh/" class="contact-icons"><font-awesome-icon :icon="[ 'fab', 'facebook-square' ]"/></a>
-        <a href="https://github.com/minhdq1998" class="contact-icons"><font-awesome-icon :icon="[ 'fab', 'github-square' ]"/></a>
+        <a href="https://www.linkedin.com/in/doanquangminh/" class="contact-icons" target="_blank"><font-awesome-icon :icon="[ 'fab', 'linkedin' ]"/></a>
+        <a href="https://www.facebook.com/taksraj/" class="contact-icons" target="_blank"><font-awesome-icon :icon="[ 'fab', 'facebook-square' ]"/></a>
+        <a href="https://github.com/minhdq1998" class="contact-icons" target="_blank"><font-awesome-icon :icon="[ 'fab', 'github-square' ]"/></a>
     </div>
 </template>
 
