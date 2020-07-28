@@ -28,7 +28,7 @@ html {
     margin-left: 50px;
 }
 
-@media(max-width:568px) {
+@media(max-width:768px) {
     #check:checked ~ .side-bar {
         left: 0px !important;
     }
@@ -44,9 +44,8 @@ html {
 
 .part-container {
     height: 100%;
-    min-height: 40vh;
     margin-top: 0px;
-    padding-top: 100px !important;
+    padding-top: 50px !important;
     margin-bottom: 20px;
     padding: 30px;
     color: var(--default-text-color);

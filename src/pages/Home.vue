@@ -2,12 +2,13 @@
     <div>
         <input class="checkbox" type="checkbox" id="check">
         <div class="background"></div>
-        <portfolio-side-bar v-on:change_tab=change_active_tab :active_tab=active_tab />
-        <portfolio-content v-on:change_tab=change_active_tab />
+        <portfolio-side-bar :active_tab=active_tab />
+        <portfolio-content />
     </div>
 </template>
 
 <script>
+import { bus } from '../main'
 import PortfolioSideBar from '../components/templates/PortfolioSideBar'
 import PortfolioContent from '../components/templates/PortfolioContent'
 
@@ -26,6 +27,9 @@ export default {
         change_active_tab(tab) {
             this.active_tab = tab     
         },
+    },
+    created() {
+        bus.$on('change_tab',(tab) => this.change_active_tab(tab))
     }
 }
 </script>

@@ -1,6 +1,7 @@
 <template>
     <section id="about" class="part-container">
         <Header text="ABOUT ME" icon="🧐"/>
+        <Introduction></Introduction>
         <Paragraph v-for="(paragraph, index) in paragraphs" :key=index 
             :paragraph=paragraph 
             margin_bottom="30px" />
@@ -9,12 +10,14 @@
 <script>
 import Header from '../molecules/Header'
 import Paragraph from '../atoms/Paragraph'
+import Introduction from '../molecules/Introduction'
 
 export default {
     name:'About',
     components: {
         Header,
-        Paragraph
+        Paragraph,
+        Introduction
     },
     data: () => ({
         paragraphs: [
@@ -33,4 +36,7 @@ export default {
 }
 </script>
 <style scoped>
+#about {
+    min-height: 100vh;
+}
 </style>

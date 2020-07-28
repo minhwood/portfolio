@@ -3,11 +3,7 @@
       <timeline-header :is_final=is_final />
       <div class="experience-content">
         <experiences-header :role=role :company=company :location=location :period=period />
-        <paragraph paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Curabitur placerat turpis in diam ultrices, sed maximus neque vestibulum. 
-        Suspendisse pulvinar augue a mi imperdiet egestas. 
-        Phasellus in lacus porta, tincidunt est eu, rutrum purus. 
-        Mauris sed tincidunt metus.Nam consectetur non sapien ac." />
+        <paragraph :paragraph=descriptions />
       </div>
       <div class="empty-padding"></div>
   </div>
@@ -32,7 +28,8 @@ export default {
         role: String,
         company: String,
         location: String,
-        period: String
+        period: String,
+        descriptions: String
     }
 }
 </script>
@@ -67,6 +64,13 @@ export default {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media(max-width:568px) {
+    .experience-content {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 </style>

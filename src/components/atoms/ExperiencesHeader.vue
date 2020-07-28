@@ -1,7 +1,7 @@
 <template>
     <div>
-        <p class="p-info"><b><span>{{role}}</span></b> at <b><company>{{company}}</company></b></p>
-        <p class="p-meta"><loc>{{location}}</loc> | {{period}}</p>
+        <p class="p-info"><b><span class="role">{{role}}</span></b> at <b><span class="company">{{company}}</span></b></p>
+        <p class="p-meta"><span class="location">{{location}}</span> | {{period}}</p>
     </div>
 </template>
 
@@ -35,15 +35,15 @@ p {
     font-size: 16px;
 }
 
-span {
+.role {
     color: var(--header-secondary-text-color);
 }
 
-company {
+.company {
     color: var(--header-third-text-color);
 }
 
-loc {
+.location {
     color: var(--header-primary-text-color);
 }
 </style>

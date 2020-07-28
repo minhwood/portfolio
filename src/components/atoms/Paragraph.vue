@@ -29,6 +29,12 @@ p {
     text-align:justify;
 }
 
+@media (max-width: 568px) {
+    p {
+        text-align: left;
+    }
+}
+
 
 @keyframes transitionIn {
     from {

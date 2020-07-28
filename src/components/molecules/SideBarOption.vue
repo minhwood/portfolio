@@ -4,6 +4,8 @@
     ><span>{{ text }}</span></a>
 </template>
 <script>
+import { bus } from '../../main'
+
 export default {
     name:'SideBarOption',
     props: {
@@ -13,7 +15,7 @@ export default {
     },
     methods: {
         onclick() {
-            this.$emit('onclick', this.section_id)
+            bus.$emit('change_tab', this.section_id)
         },
     },
     computed: {
