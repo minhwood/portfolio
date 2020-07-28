@@ -65,4 +65,10 @@ export default {
     text-align: center;
     bottom: 8px;
 }
+
+@media(max-width:568px) {
+    .timeline-header {
+        display: none;
+    }
+}
 </style>

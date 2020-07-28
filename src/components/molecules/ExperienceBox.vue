@@ -66,4 +66,11 @@ export default {
         opacity: 1;
     }
 }
+
+@media(max-width:568px) {
+    .experience-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
 </style>

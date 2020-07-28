@@ -3,10 +3,9 @@
         <div class="container">
             <Observer/>
             <about/>
+            <skills/>
             <experiences/>
             <educations/>
-            <skills/>
-            <contacts/>
             <playground/>
         </div>
     </div>
@@ -16,7 +15,6 @@ import About from '../organisms/About'
 import Experiences from '../organisms/Experiences'
 import Educations from '../organisms/Educations'
 import Skills from '../organisms/Skills'
-import Contacts from '../organisms/Contacts'
 import Playground from '../organisms/Playground' 
 import Observer from '../atoms/Observer'
 
@@ -27,7 +25,6 @@ export default {
         Experiences,
         Educations,
         Skills,
-        Contacts,
         Playground,
         Observer
     },
@@ -35,7 +32,7 @@ export default {
 </script>
 <style scoped>
 .content-box {
-    background: var(--primary-bg-color);
+    background-color: var(--primary-bg-color);
     min-height: 100vh;
     margin-left: 250px;
     padding: 5px 120px 5px 120px;

@@ -5,11 +5,11 @@
             <avatar src="avatar.jpg"/>
             <person-title name="Minh Doan Quang" jobtitle="Web Developer of Wonder Land"/>
             <side-bar-option :current_active_tab=active_tab section_id="about" text="About"/>
+            <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>
             <side-bar-option :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
             <side-bar-option :current_active_tab=active_tab section_id="educations" text="Educations"/>
-            <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>
-            <side-bar-option :current_active_tab=active_tab section_id="contacts" text="Contacts"/>
             <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/>
+            <contact />
         </div>
     </div>
 </template>
@@ -18,6 +18,7 @@ import Avatar from '../molecules/Avatar'
 import CollabTriggerButton from '../molecules/CollabTriggerButton'
 import SideBarOption from '../molecules/SideBarOption'
 import PersonTitle from '../molecules/PersonTitle'
+import Contact from '../organisms/Contact'
 
 export default {
     name:'PortfolioSideBar',
@@ -28,7 +29,8 @@ export default {
         Avatar,
         CollabTriggerButton,
         SideBarOption,
-        PersonTitle
+        PersonTitle,
+        Contact
     },
 }
 </script>
@@ -36,7 +38,7 @@ export default {
 .side-bar {
     padding-top: 55px;
     padding-bottom: 40px;
-    background: var(--secondary-bg-color);
+    background-color: var(--secondary-bg-color);
     position: fixed;
     width: 250px;
     height: 100%;
@@ -45,6 +47,19 @@ export default {
     transition: left 0.5s ease-in;
     animation: transitionIn 1s;
     left:0px;
+}
+
+.side-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../../assets/melbourne.jpg') !important;
+    background-size: 100vh;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 .hide-collabs {
