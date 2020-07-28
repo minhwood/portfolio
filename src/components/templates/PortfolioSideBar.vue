@@ -66,6 +66,12 @@ export default {
     transition: display 1s;   
 }
 
+.vertical-centralize {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @keyframes transitionIn {
     from {
         left: -250px;

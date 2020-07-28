@@ -1,13 +1,23 @@
 <template>
   <div class="introduct-box row">
-      <div class="col-6">Hi, I'm Minh, Web Developer</div>
-      <img class="col-6" src="../../assets/introduction.png" />
+      <div class="col-7 introduct-text">
+          <div class="centralize">
+            <AnimatedWord word="Hi," /><br>
+            <AnimatedWord word="I'm" />
+            <AnimatedWord word="Minh," color="var(--header-secondary-text-color)" /><br>
+            <AnimatedWord word="Web Developer" color="var(--header-third-text-color)"/>
+          </div>
+      </div>
+      <img class="col-5 second-avatar" src="../../assets/introduction.png" />
   </div>
 </template>
 
 <script>
+import AnimatedWord from '../atoms/AnimatedWord'
+
 export default {
-    name:'Introduction'
+    name:'Introduction',
+    components: { AnimatedWord }
 }
 </script>
 
@@ -15,10 +25,31 @@ export default {
 .introduct-box {
     height: 40vh;
     padding: 20px 0px 20px 0px;
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .introduct-box img {
-    height: 100%;
+    max-width: 100% !important;
+    height: inherit !important;
+    overflow: hidden;
+}
+
+.introduct-text {
+    position: relative;
+}
+
+.centralize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px){
+    .second-avatar {
+        display:none
+    }
 }
 
 </style>

@@ -36,4 +36,7 @@ export default {
 }
 </script>
 <style scoped>
+#about {
+    min-height: 100vh;
+}
 </style>
