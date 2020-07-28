@@ -1,7 +1,7 @@
 <template>
   <div class="education-header row" :style="background_color" @click="change_box">
     <div class="col-11">
-      <div class="school-header">{{school}}</div>
+      <div class="school-header" >{{school}}</div>
       <div class="qualification-header">{{qualification}}</div>
     </div>
     <div class="col-1 education-collab">
@@ -27,8 +27,8 @@ export default {
     computed: {
         background_color() {
             return this.is_active ? 
-                "background: var(--hover-hightlight-color)" :
-                "background: var(--secondary-bg-color)" 
+                "border-bottom: 2px solid var(--hover-hightlight-color)" :
+                "border: none"
         },
         collab_icon() {
             return this.is_active ? "minus" : "plus"
@@ -46,6 +46,7 @@ export default {
 .education-header {
     padding: 20px;
     cursor: pointer;
+    background: var(--secondary-bg-color);
 }
 
 .school-header {
