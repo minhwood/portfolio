@@ -19,7 +19,7 @@ export default {
 <style scoped>
 .contact-header {
     text-decoration: underline;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 16px;
 }
 .contact-box {
@@ -35,6 +35,17 @@ export default {
 
 .contact-icons {
     color: var(--secondary-text-color);
-    margin: 0px 20px 0px 20px
+    margin: 0px 20px 0px 20px;
+}
+
+.contact-icons svg {
+    height: 18px;
+    width: 18px;
+    transition: 0.3s;
+}
+
+.contact-icons svg:hover {
+    transform: scale(1.1);
+    color: var(--default-text-color);
 }
 </style>
