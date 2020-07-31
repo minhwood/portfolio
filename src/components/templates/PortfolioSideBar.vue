@@ -2,7 +2,7 @@
     <div class="side-bar">
         <collab-trigger-button check_box_id="check" />
         <div class="hide-collabs">
-            <avatar src="avatar.jpg"/>
+            <avatar src="myavatar.png"/>
             <person-title name="Minh Doan Quang" jobtitle="Web Developer of Wonder Land"/>
             <side-bar-option :current_active_tab=active_tab section_id="about" text="About"/>
             <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>

@@ -67,7 +67,7 @@ export default {
     }
 }
 
-@media(max-width:568px) {
+@media(max-width:768px) {
     .experience-content {
         margin-left: 0px;
         margin-right: 0px;
