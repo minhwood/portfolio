@@ -2,14 +2,14 @@
     <div class="side-bar">
         <collab-trigger-button check_box_id="check" />
         <div class="hide-collabs">
-            <avatar src="avatar.jpg"/>
+            <avatar src="myavatar.png"/>
             <person-title name="Minh Doan Quang" jobtitle="Web Developer of Wonder Land"/>
-            <side-bar-option v-on:onclick=option_click text="About Me"/>
-            <side-bar-option v-on:onclick=option_click text="Experiences"/>
-            <side-bar-option v-on:onclick=option_click text="Educations"/>
-            <side-bar-option v-on:onclick=option_click text="Skills"/>
-            <side-bar-option v-on:onclick=option_click text="Activities"/>
-            <side-bar-option v-on:onclick=option_click text="Contacts"/>
+            <side-bar-option :current_active_tab=active_tab section_id="about" text="About"/>
+            <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>
+            <side-bar-option :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
+            <side-bar-option :current_active_tab=active_tab section_id="educations" text="Educations"/>
+            <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/>
+            <contact />
         </div>
     </div>
 </template>
@@ -18,28 +18,27 @@ import Avatar from '../molecules/Avatar'
 import CollabTriggerButton from '../molecules/CollabTriggerButton'
 import SideBarOption from '../molecules/SideBarOption'
 import PersonTitle from '../molecules/PersonTitle'
+import Contact from '../organisms/Contact'
 
 export default {
     name:'PortfolioSideBar',
+    props: {
+        active_tab: String
+    },
     components: {
         Avatar,
         CollabTriggerButton,
         SideBarOption,
-        PersonTitle
+        PersonTitle,
+        Contact
     },
-    methods: {
-        option_click() {
-            //to be implement
-            console.log("option clicked")
-        }
-    }
 }
 </script>
 <style scoped>
 .side-bar {
     padding-top: 55px;
     padding-bottom: 40px;
-    background: var(--secondary-bg-color);
+    background-color: var(--secondary-bg-color);
     position: fixed;
     width: 250px;
     height: 100%;
@@ -50,8 +49,27 @@ export default {
     left:0px;
 }
 
+.side-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../../assets/melbourne.jpg') !important;
+    background-size: 100vh;
+    opacity: 0.1;
+    z-index: -1;
+}
+
 .hide-collabs {
     transition: display 1s;   
+}
+
+.vertical-centralize {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @keyframes transitionIn {
@@ -63,7 +81,7 @@ export default {
     }
 }
 
-@media(max-width:568px) {
+@media(max-width:768px) {
     .side-bar {
         left: -200px !important;
     }
