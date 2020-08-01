@@ -1,14 +1,16 @@
 <template>
     <section id="skills" class="part-container">
         <Header text="SKILLS" icon="💼"/>
-        <skill-icon src="python.svg" />
-        <skill-icon src="django.svg" />
-        <skill-icon src="javascript.svg" />
-        <skill-icon src="vue.svg" />
-        <skill-icon src="html.svg" />
-        <skill-icon src="css.svg" />
-        <skill-icon src="scss.svg" />
-        <skill-icon src="scala.svg" />
+        <div class="skills-box">
+        <skill-icon src="pythonpixel.svg" />
+        <skill-icon src="djangopixel.svg" />
+        <skill-icon src="javascriptpixel.svg" />
+        <skill-icon src="vuepixel.svg" />
+        <skill-icon src="htmlpixel.svg" />
+        <skill-icon src="csspixel.svg" />
+        <skill-icon src="sasspixel.svg" />
+        <skill-icon src="scalapixel.svg" />
+        </div>
     </section>
 </template>
 <script>
@@ -24,7 +26,7 @@ export default {
 }
 </script>
 <style scoped>
-#skills {
+.skills-box {
     text-align: center;
 }
 </style>
