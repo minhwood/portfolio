@@ -3,18 +3,20 @@
         <collab-trigger-button check_box_id="check" />
         <div class="hide-collabs">
             <avatar src="myavatar.png"/>
+            <!-- <flipping-avatar src="myavatar.png" /> -->
             <person-title name="Minh Doan Quang" jobtitle="Web Developer of Wonder Land"/>
             <side-bar-option :current_active_tab=active_tab section_id="about" text="About"/>
             <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>
-            <side-bar-option :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
             <side-bar-option :current_active_tab=active_tab section_id="educations" text="Educations"/>
-            <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/>
+            <side-bar-option :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
+            <!-- <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/> -->
             <contact />
         </div>
     </div>
 </template>
 <script>
 import Avatar from '../molecules/Avatar'
+// import FlippingAvatar from '../molecules/FlippingAvatar'
 import CollabTriggerButton from '../molecules/CollabTriggerButton'
 import SideBarOption from '../molecules/SideBarOption'
 import PersonTitle from '../molecules/PersonTitle'
@@ -27,6 +29,7 @@ export default {
     },
     components: {
         Avatar,
+        // FlippingAvatar,
         CollabTriggerButton,
         SideBarOption,
         PersonTitle,

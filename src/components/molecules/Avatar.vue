@@ -16,8 +16,8 @@ export default {
 </script>
 <style scoped>
 .profile-picture{
-    widows: 130px;
-    height: 130px;
+    widows: 140px;
+    height: 140px;
     border-radius: 130px;
     margin-bottom: 10px;
 }

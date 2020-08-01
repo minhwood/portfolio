@@ -1,42 +1,35 @@
 <template>
-  <div class="introduct-box row">
-      <div class="col-7 introduct-text">
+  <div class="introduct-box">
+    <div class="introduct-text">
           <div class="centralize">
-            <AnimatedWord word="Hi," /><br>
-            <AnimatedWord word="I'm" />
-            <AnimatedWord word="Minh," color="var(--header-secondary-text-color)" /><br>
-            <AnimatedWord word="Web Developer" color="var(--header-third-text-color)"/>
+            <h2> Hi,<br>I'm Minh,<br>Web Developer </h2>
           </div>
       </div>
-      <img class="col-5 second-avatar" src="../../assets/introduction.png" />
+    <img class="second-avatar" src="../../assets/background.png" />
   </div>
 </template>
 
 <script>
-import AnimatedWord from '../atoms/AnimatedWord'
+// import AnimatedWord from '../atoms/AnimatedWord'
 
 export default {
     name:'Introduction',
-    components: { AnimatedWord }
+    components: { 
+        // AnimatedWord 
+    }
 }
 </script>
 
 <style scoped>
 .introduct-box {
-    height: 40vh;
     padding: 20px 0px 20px 0px;
     margin-bottom: 40px;
-    overflow: hidden;
-}
-
-.introduct-box img {
-    max-width: 100% !important;
-    height: inherit !important;
-    overflow: hidden;
 }
 
 .introduct-text {
     position: relative;
+    width: 50%;
+    display: inline-block;
 }
 
 .centralize {
@@ -46,9 +39,30 @@ export default {
     transform: translate(-50%, -50%);
 }
 
+.second-avatar {
+    max-height: 35vh;
+    max-width: 50%;
+    display: inline-block;
+}
+
 @media (max-width: 768px){
+    .introduct-box {
+        height: 100%;
+    }
+
     .second-avatar {
         display:none
+    }
+
+    .introduct-text {
+        width: 100%;
+    }
+
+    .centralize {
+        position: static;
+        top: none;
+        left: none;
+        transform: none;
     }
 }
 
