@@ -1,5 +1,5 @@
 <template>
-    <p class="header-text">{{icon}} <b>{{text}}</b></p>
+    <p class="header-text"><img :src="require('@/assets/' + icon)" /> <b>{{text}}</b></p>
 </template>
 <script>
 export default {
@@ -17,4 +17,9 @@ export default {
     font-size: 24px;
     margin:0px;
 }
+
+.header-text img {
+    height: 40px;
+}
+
 </style>

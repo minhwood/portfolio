@@ -1,6 +1,6 @@
 <template>
     <section id="about" class="part-container">
-        <Header text="ABOUT ME" icon="🧐"/>
+        <Header text="ABOUT ME" icon="glass.svg"/>
         <Introduction></Introduction>
         <Paragraph v-for="(paragraph, index) in paragraphs" :key=index 
             :paragraph=paragraph 

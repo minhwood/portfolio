@@ -1,6 +1,6 @@
 <template>
     <section id="educations" class="part-container">
-        <Header text="EDUCATIONS" icon="🎓"/>
+        <Header text="EDUCATIONS" icon="hat.svg"/>
         <EducationBox v-for="(education, index) in educations" :key=index 
             :school=education.school
             :qualification=education.qualification

@@ -1,6 +1,6 @@
 <template>
     <section id="experiences" class="part-container">
-        <Header text="EXPERIENCES" icon="🖥️"/>
+        <Header text="EXPERIENCES" icon="monitor.svg"/>
         <ExperienceBox v-for="(experience, index) in experiences" :key=index 
             :role=experience.role
             :company=experience.company

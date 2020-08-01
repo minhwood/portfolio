@@ -1,10 +1,10 @@
 <template>
   <div class="education-header row" :style="background_color" @click="change_box">
-    <div class="col-11">
+    <div class="col-12 col-md-11">
       <div class="school-header" >{{school}}</div>
       <div class="qualification-header">{{qualification}}</div>
     </div>
-    <div class="col-1 education-collab">
+    <div class="col-12 col-md-1 education-collab">
       <font-awesome-icon class="education-collab-icon" :icon="collab_icon" />
     </div>
   </div>
@@ -59,8 +59,8 @@ export default {
 }
 
 .education-collab {
+    min-height: 30px;
     position: relative;
-    min-height: 100% !important;
     text-align: center;
     vertical-align: middle;
 }

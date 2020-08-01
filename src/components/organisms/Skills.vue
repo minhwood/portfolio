@@ -1,14 +1,13 @@
 <template>
     <section id="skills" class="part-container">
-        <Header text="SKILLS" icon="💼"/>
+        <Header text="SKILLS" icon="skills.svg"/>
         <div class="skills-box">
-        <skill-icon src="pythonpixel.svg" />
+        <skill-icon src="python.svg" />
         <skill-icon src="djangopixel.svg" />
         <skill-icon src="javascriptpixel.svg" />
         <skill-icon src="vuepixel.svg" />
-        <skill-icon src="htmlpixel.svg" />
-        <skill-icon src="csspixel.svg" />
-        <skill-icon src="sasspixel.svg" />
+        <skill-icon src="html18.svg" />
+        <skill-icon src="css18.svg" />
         <skill-icon src="scalapixel.svg" />
         </div>
     </section>
