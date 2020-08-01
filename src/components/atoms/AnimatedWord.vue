@@ -18,7 +18,7 @@ export default {
 <style scoped>
 div {
     font-size: 32px;
-    padding: 4px 4px;
+    padding: 4px 6px;
     text-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
     display: inline-block;
 }
