@@ -26,9 +26,9 @@ export default {
             { role:"Web Developer",         company: "Septeni Technology",  location:"Hanoi",       period:"2019-2020" , 
                 descriptions:"Develop multiple Web and ETL applications for big multinational media and digital marketing companies in the world."},
             { role:"IT Support",            company: "Emma & Tom",          location:"Melbourne",   period:"2019" , 
-                descriptions:"Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need and exposing to a multicultural working environment." },
+                descriptions:"Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need and exposed to a multicultural working environment." },
             { role:"Teaching Assistant",    company: "Code Camp",           location:"Melbourne",   period:"2018" , 
-                descriptions:"Help deliver interactive lessons, activities that exposing primary students to programming and problem-solving."},
+                descriptions:"Help deliver interactive lessons, activities that expose primary students to programming and problem-solving."},
             { role:"Intern Web Developer",  company: "FPT Software",        location:"Hanoi",       period:"2017-2018" , 
                 descriptions:"Build an internal Management System for one of the big four accounting firm."},
         ]

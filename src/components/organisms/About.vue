@@ -23,7 +23,7 @@ export default {
     data: () => ({
         paragraphs: [
             `I am a young, curious, responsible individual who enjoys building things to satisfy self-curiosity and make our life a little bit easier.`,
-            `A Hufflepuff 🧙 who love coffees ☕, maintainable code, and quite often, I draw ugly pixel-arts just for fun.`
+            `A Hufflepuff 🧙 who love coffee ☕, maintainable code, and quite often, I draw ugly pixel-arts just for fun.`
         ]
     })
 }
