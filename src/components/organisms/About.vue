@@ -3,7 +3,8 @@
         <Header text="ABOUT ME" icon="glass.svg"/>
         <Introduction></Introduction>
         <Paragraph v-for="(paragraph, index) in paragraphs" :key=index 
-            :paragraph=paragraph 
+            :paragraph=paragraph
+            font_size="20px" 
             margin_bottom="30px" />
     </section>
 </template>
@@ -21,16 +22,8 @@ export default {
     },
     data: () => ({
         paragraphs: [
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Curabitur placerat turpis in diam ultrices, sed maximus neque vestibulum. 
-            Suspendisse pulvinar augue a mi imperdiet egestas. 
-            Phasellus in lacus porta, tincidunt est eu, rutrum purus. 
-            Mauris sed tincidunt metus.Nam consectetur non sapien ac.`,
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Curabitur placerat turpis in diam ultrices, sed maximus neque vestibulum. 
-            Suspendisse pulvinar augue a mi imperdiet egestas. 
-            Phasellus in lacus porta, tincidunt est eu, rutrum purus. 
-            Mauris sed tincidunt metus.Nam consectetur non sapien ac.`,
+            `I am a young, curious, responsible individual who enjoys building things to satisfy self-curiosity and make our life a little bit easier.`,
+            `A Hufflepuff 🧙 who love coffees ☕, maintainable code, and quite often, I draw ugly pixel-arts just for fun.`
         ]
     })
 }

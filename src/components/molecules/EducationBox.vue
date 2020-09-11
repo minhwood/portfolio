@@ -3,7 +3,8 @@
         <education-header :box_id="this.$vnode.key"
             :school=school 
             :qualification=qualification 
-            :is_active=is_active 
+            :is_active=is_active
+            :expandable=expandable
             />
         <div class="education-content row"  :style=display_content>
             <paragraph :paragraph=descriptions />
@@ -33,6 +34,9 @@ export default {
     computed: {
         display_content() {
             return this.is_active ? "display:block" : "display:none"
+        },
+        expandable() {
+            return this.descriptions ? true : false
         }
     },
 }

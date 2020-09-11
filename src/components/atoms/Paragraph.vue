@@ -10,11 +10,16 @@ export default {
         margin_bottom: {
             type: String,
             default: "0.5rem"
+        },
+        font_size: {
+            type: String,
+            default: "16px"
         }
     },
     computed: {
         actually_margin_bottom() {
             return {
+                "font-size": this.font_size,
                 "margin-bottom": this.margin_bottom
             }
         }
@@ -24,7 +29,6 @@ export default {
 
 <style scoped>
 p {
-    font-size: 16px;
     animation: transitionIn 3s;
     text-align:justify;
 }

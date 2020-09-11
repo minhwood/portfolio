@@ -4,7 +4,7 @@
       <div class="school-header" >{{school}}</div>
       <div class="qualification-header">{{qualification}}</div>
     </div>
-    <div class="col-12 col-md-1 education-collab">
+    <div class="col-12 col-md-1 education-collab" v-if="expandable">
       <font-awesome-icon class="education-collab-icon" :icon="collab_icon" />
     </div>
   </div>
@@ -22,7 +22,11 @@ export default {
         },
         school: String,
         qualification: String,
-        box_id: Number
+        box_id: Number,
+        expandable: {
+            type: Boolean,
+            default: false
+        }
     },
     computed: {
         background_color() {
@@ -36,7 +40,9 @@ export default {
     },
     methods: {
         change_box() {
-            bus.$emit('change_box', this.box_id)
+            if (this.expandable) {
+                bus.$emit('change_box', this.box_id)
+            }
         }
     }
 };
