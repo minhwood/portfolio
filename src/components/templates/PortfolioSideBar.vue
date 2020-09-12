@@ -4,7 +4,7 @@
         <div class="hide-collabs">
             <avatar src="myavatar.png"/>
             <!-- <flipping-avatar src="myavatar.png" /> -->
-            <person-title name="Minh Doan Quang" jobtitle="Web Developer of Wonder Land"/>
+            <person-title name="Minh Doan Quang" jobtitle="Just a Casual Developer"/>
             <side-bar-option :current_active_tab=active_tab section_id="about" text="About"/>
             <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>
             <side-bar-option :current_active_tab=active_tab section_id="educations" text="Educations"/>
