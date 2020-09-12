@@ -22,8 +22,8 @@ export default {
     },
     data: () => ({
         paragraphs: [
-            `I am a young, curious, responsible individual who enjoys building things to satisfy self-curiosity and make our life a little bit easier.`,
-            `A Hufflepuff 🧙 who love coffee ☕, maintainable code, and quite often, I draw ugly pixel-arts just for fun.`
+            `I am a young, curious, and responsible individual who enjoys writing code and build things to satisfy self-curiosity and make our life a little bit easier.`,
+            `Beside that, I'm also a Hufflepuff 🧙 who love coffee ☕, and quite often, I draw ugly pixel-arts just for fun.`
         ]
     })
 }
