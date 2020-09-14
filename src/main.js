@@ -10,12 +10,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueNesCss from 'vuenes.css'
 
 export const bus = new Vue()
 library.add(faBars, faInfo, faHighlighter, faPlus, faMinus, faLinkedin, faGithubSquare, faFacebookSquare)
 Vue.use(VueRouter, BootstrapVue)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
+Vue.use(VueNesCss)
+
 
 new Vue({
   router,

@@ -1,18 +1,18 @@
 <template>
     <section id="playground" class="part-container">
-        <Header text="PLAYGROUND" icon="🚀"/>
-        <UnderConstructions />
+        <Header text="PLAYGROUND" icon="monitor.svg"/>
+        <Project></Project>
     </section>
 </template>
 <script>
 import Header from '../molecules/Header'
-import UnderConstructions from '../molecules/UnderConstructions'
+import Project from '../molecules/Project'
 
 export default {
     name:'Playground',
     components: {
         Header,
-        UnderConstructions
+        Project
     }
 }
 </script>
