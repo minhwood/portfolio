@@ -22,24 +22,19 @@ export default {
     font-size: 16px;
 }
 .contact-box {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    text-align: center !important;
     width: 100%;
-    padding: 10px;
     color: var(--secondary-text-color);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .contact-icons {
     color: var(--secondary-text-color);
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px 0px 0px;
 }
 
 .contact-icons svg {
-    height: 18px;
-    width: 18px;
+    height: 22px;
+    width: 22px;
     transition: 0.3s;
 }
 

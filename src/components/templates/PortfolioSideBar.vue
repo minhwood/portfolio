@@ -10,7 +10,6 @@
             <side-bar-option :current_active_tab=active_tab section_id="educations" text="Educations"/>
             <side-bar-option :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
             <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/>
-            <contact />
         </div>
     </div>
 </template>
@@ -20,7 +19,6 @@ import Avatar from '../molecules/Avatar'
 import CollabTriggerButton from '../molecules/CollabTriggerButton'
 import SideBarOption from '../molecules/SideBarOption'
 import PersonTitle from '../molecules/PersonTitle'
-import Contact from '../organisms/Contact'
 
 export default {
     name:'PortfolioSideBar',
@@ -33,7 +31,6 @@ export default {
         CollabTriggerButton,
         SideBarOption,
         PersonTitle,
-        Contact
     },
 }
 </script>

@@ -28,7 +28,7 @@ export default {
         {
           name:"8-Bits Weather Forecast",
           img: "weather-app.png",
-          git_url: "https://github.com/misnhdq1998/weather-app",
+          git_url: "https://github.com/minhdq1998/weather-app",
           demo_url: "https://minhdq1998.github.io/weather-app/"
         },
         {

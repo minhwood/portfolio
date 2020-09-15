@@ -6,19 +6,22 @@
             :paragraph=paragraph
             font_size="20px" 
             margin_bottom="30px" />
+        <contact />
     </section>
 </template>
 <script>
 import Header from '../molecules/Header'
 import Paragraph from '../atoms/Paragraph'
 import Introduction from '../molecules/Introduction'
+import Contact from '../organisms/Contact'
 
 export default {
     name:'About',
     components: {
         Header,
         Paragraph,
-        Introduction
+        Introduction,
+        Contact
     },
     data: () => ({
         paragraphs: [
