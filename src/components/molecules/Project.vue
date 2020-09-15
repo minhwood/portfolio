@@ -1,12 +1,9 @@
 <template>
 <div>
-  <div 
-  class="project-box" 
-  v-for="(project, index) in projects" 
-  :key=index>
+  <div class="project-box">
     <img 
       class="project-box-background"
-      :src="require('@/assets/'+project.img)" />
+      :src="require('@/assets/'+ project.img)" />
     <div class="project-box-content">
       <h5 style="font-weight:bold;">{{ project.name }}</h5>
       <div>
@@ -21,30 +18,9 @@
 <script>
 export default {
     name:"Project",
-    components: {
+    props: {
+      project: Object
     },
-    data: () => ({
-      projects: [
-        {
-          name:"8-Bits Weather Forecast",
-          img: "weather-app.png",
-          git_url: "https://github.com/minhdq1998/weather-app",
-          demo_url: "https://minhdq1998.github.io/weather-app/"
-        },
-        {
-          name:"Body language-telepresence Robot",
-          img: "baxter.jpg",
-          git_url: "https://github.com/minhdq1998/Robot-body-language-telepresence---VXLAB",
-          demo_url: "https://youtu.be/2_N49f9U_EE"
-        },
-        {
-          name:"Hypeciety",
-          img: "hypeciety.png",
-          git_url: "https://github.com/minhdq1998/Commercial-Clothing-Website-PHP",
-          demo_url: "http://titan.csit.rmit.edu.au/~s3608452/Commercial-Clothing-Website-PHP/home.php"
-        },
-      ]
-    }),
     methods: {
       background_image_path(image) {
         console.log("executed")
@@ -109,6 +85,28 @@ export default {
 
 .project-box:hover .project-box-content {
   padding-top: 30px;
+}
+
+@media(max-width:768px) {
+  .project-box:hover {
+    transform: scale(1.05); 
+  }
+
+  .project-box:hover h5 {
+    display: none;
+  }
+
+  .project-box:hover .project-box-background {
+    opacity: 0.2;
+  }
+
+  .project-box:hover .retro-button{
+    visibility: visible;
+  }
+
+  .project-box:hover .project-box-content {
+    padding-top: 15px;
+  }
 }
 
 .retro-button {
