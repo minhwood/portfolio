@@ -1,15 +1,13 @@
 <template>
-<div>
-  <div class="project-box">
-    <img 
-      class="project-box-background"
-      :src="require('@/assets/'+ project.img)" />
-    <div class="project-box-content">
-      <h5 style="font-weight:bold;">{{ project.name }}</h5>
-      <div>
-        <div class="retro-button" v-on:click="redirect_to(project.git_url)">Source Code</div>
-        <div class="retro-button" v-on:click="redirect_to(project.demo_url)">Demo</div>
-      </div>
+<div class="project-box">
+  <img 
+    class="project-box-background"
+    :src="require('@/assets/'+ project.img)" />
+  <div class="project-box-content">
+    <h5 style="font-weight:bold;">{{ project.name }}</h5>
+    <div>
+      <div class="retro-button" v-on:click="redirect_to(project.git_url)">Source Code</div>
+      <div class="retro-button" v-on:click="redirect_to(project.demo_url)">Demo</div>
     </div>
   </div>
 </div>
@@ -106,6 +104,31 @@ export default {
 
   .project-box:hover .project-box-content {
     padding-top: 15px;
+  }
+}
+
+@media(min-width:1585px) {
+  .project-box {
+    display: inline-block !important;
+    width: 465px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .project-box:hover {
+    transform: scale(1.05); 
+  }
+
+  .project-box:hover .project-box-background {
+    opacity: 0.2;
+  }
+
+  .project-box:hover .retro-button{
+    visibility: visible;
+  }
+
+  .project-box:hover .project-box-content {
+    padding-top: 30px;
   }
 }
 

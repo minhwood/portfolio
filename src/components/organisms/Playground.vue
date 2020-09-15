@@ -1,11 +1,12 @@
 <template>
     <section id="playground" class="part-container">
         <Header text="PLAYGROUND" icon="monitor.svg"/>
+        <div class="projects-container">
         <Project 
             v-for="(project, index) in projects" 
             :project=project 
-            :key=index 
-        />
+            :key=index />
+        </div>
     </section>
 </template>
 <script>
@@ -45,5 +46,9 @@ export default {
 <style scoped>
 #playground {
     position: relative;
+}
+
+.projects-container {
+  text-align: center;
 }
 </style>
