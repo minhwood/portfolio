@@ -18,7 +18,6 @@ export default {
 </script>
 <style scoped>
 #playground {
-    min-height: 100vh;
     position: relative;
 }
 </style>

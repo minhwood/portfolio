@@ -8,10 +8,10 @@
       class="project-box-background"
       :src="require('@/assets/'+project.img)" />
     <div class="project-box-content">
-      <h4>{{ project.name }}</h4>
-      <div class="row">
-        <a class="retro-button offset-md-2 col-md-4" type="submit" href="#">Source Code</a>
-        <a class="retro-button col-md-4" type="submit" href="#">Demo</a>
+      <h5 style="font-weight:bold;">{{ project.name }}</h5>
+      <div>
+        <div class="retro-button" v-on:click="redirect_to(project.git_url)">Source Code</div>
+        <div class="retro-button" v-on:click="redirect_to(project.demo_url)">Demo</div>
       </div>
     </div>
   </div>
@@ -26,19 +26,23 @@ export default {
     data: () => ({
       projects: [
         {
+          name:"8-Bits Weather Forecast",
+          img: "weather-app.png",
+          git_url: "https://github.com/misnhdq1998/weather-app",
+          demo_url: "https://minhdq1998.github.io/weather-app/"
+        },
+        {
           name:"Body language-telepresence Robot",
           img: "baxter.jpg",
-          description:"",
           git_url: "https://github.com/minhdq1998/Robot-body-language-telepresence---VXLAB",
           demo_url: "https://youtu.be/2_N49f9U_EE"
         },
         {
-          name:"8-Bits Weather Forecast",
-          img: "weather-app.png",
-          description: "",
-          git_url: "https://github.com/minhdq1998/weather-app",
-          demo_url: "https://minhdq1998.github.io/weather-app/"
-        }
+          name:"Hypeciety",
+          img: "hypeciety.png",
+          git_url: "https://github.com/minhdq1998/Commercial-Clothing-Website-PHP",
+          demo_url: "http://titan.csit.rmit.edu.au/~s3608452/Commercial-Clothing-Website-PHP/home.php"
+        },
       ]
     }),
     methods: {
@@ -47,6 +51,9 @@ export default {
         let result = 'background:url('+require('@/assets/' + image )+");"
         console.log(result)
         return result
+      },
+      redirect_to(url) {
+        window.open(url, '_blank')
       }
     }
 }
@@ -74,7 +81,7 @@ export default {
   transition: 0.25s;
   border-radius: 20px;
   z-index:1;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .project-box-content {
@@ -83,28 +90,43 @@ export default {
   z-index:20000;
   position: relative;
   padding: 10px;
-  padding-top:30px;
+  padding-top:60px;
   text-align: center;
-}
-
-.retro-button {
-  visibility: hidden;
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
-  border: 1px solid white;
-  padding: 5px;
-  color: white;
+  transition: 0.25s;
 }
 
 .project-box:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); 
+}
+
+.project-box:hover .project-box-background {
+  opacity: 0.2;
 }
 
 .project-box:hover .retro-button{
   visibility: visible;
 }
 
+.project-box:hover .project-box-content {
+  padding-top: 30px;
+}
 
+.retro-button {
+  visibility: hidden;
+  transition: 0.2s;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px;
+  color: white;
+  display: inline-block;
+  width: 200px;
+  margin-top:15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
+.retro-button:hover {
+  background-color: darkgray;
+}
 
 </style>
