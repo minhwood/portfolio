@@ -9,7 +9,7 @@
             <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>
             <side-bar-option :current_active_tab=active_tab section_id="educations" text="Educations"/>
             <side-bar-option :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
-            <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/>
+            <!-- <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/> -->
         </div>
     </div>
 </template>
