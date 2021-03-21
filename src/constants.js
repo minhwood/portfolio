@@ -1,5 +1,11 @@
 export const projects = [
     {
+        name:"CSEE Community",
+        img: "weather-app.png",
+        git_url: "https://github.com/minhdq1998/weather-app",
+        demo_url: "https://minhdq1998.github.io/weather-app/"
+    },
+    {
       name:"8-Bits Weather Forecast",
       img: "weather-app.png",
       git_url: "https://github.com/minhdq1998/weather-app",
@@ -22,22 +28,26 @@ export const projects = [
 export const educations = [
     { 
         school: "ROYAL MELBOURNE INSTITUITION OF TECHNOLOGY", 
-        qualification: "Bachelor of Information Technology", 
+        qualification: "Bachelor of Information Technology",
+        period: "2017-2019",
+        location: "Melbourne",
         descriptions: ""
     },
     { 
         school: "HIGHSCHOOL FOR GIFTED STUDENT - HNUE", 
         qualification: "Graduated in Major of Computer Science", 
+        period: "2015-1017",
+        location: "Hanoi",
         descriptions: "" 
     }
 ]
 
 export const experiences = [
     { 
-        role:"Web Developer",         
+        role:"Developer",         
         company: "Septeni Technology",  
         location:"Hanoi",       
-        period:"2019-2020" , 
+        period:"2019-Present" , 
         descriptions:"Develop Web and ETL applications for big multinational media and digital marketing companies in the world to help them automate their workflows."
     },
     { 

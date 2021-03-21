@@ -4,6 +4,8 @@
         <EducationBox v-for="(education, index) in educations" :key=index 
             :school=education.school
             :qualification=education.qualification
+            :location="education.location"
+            :period="education.period"
             :descriptions=education.descriptions
             :is_active=is_active(index)
         />

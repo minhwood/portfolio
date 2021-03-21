@@ -1,13 +1,16 @@
 <template>
     <div>
         <p class="p-info"><b><span class="role">{{role}}</span></b> at <b><span class="company">{{company}}</span></b></p>
-        <p class="p-meta"><span class="location">{{location}}</span> | {{period}}</p>
+        <location-period :period="period" :location="location"></location-period>
     </div>
 </template>
 
 <script>
+import LocationPeriod from './LocationPeriod'
+
 export default {
     name: 'ExperienceHeader',
+    components: {LocationPeriod},
     props: {
         role: String,
         company: String,
@@ -31,9 +34,6 @@ p {
     margin-bottom: 0px;
 }
 
-.p-meta {
-    font-size: 16px;
-}
 
 .role {
     color: var(--header-secondary-text-color);
@@ -43,7 +43,4 @@ p {
     color: var(--header-third-text-color);
 }
 
-.location {
-    color: var(--header-primary-text-color);
-}
 </style>
