@@ -82,7 +82,7 @@ export const experiences = [
         location:"Melbourne",   
         period:"2019" , 
         descriptions:"Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need and exposed to a multicultural working environment.",
-        stacks: ["Java", "Shopify", "Javascript", "HTML", "CSS"]
+        stacks: ["Shopify", "Javascript", "HTML", "CSS"]
     },
     { 
         role:"Teaching Assistant",    
