@@ -7,6 +7,9 @@
     <div class="col-12 col-md-1 education-collab" v-if="expandable">
       <font-awesome-icon class="education-collab-icon" :icon="collab_icon" />
     </div>
+    <div class="col-12 col-md-11">
+        <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -76,5 +79,9 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.p-meta {
+    margin-bottom: 0px;
 }
 </style>

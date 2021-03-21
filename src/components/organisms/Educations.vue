@@ -4,6 +4,8 @@
         <EducationBox v-for="(education, index) in educations" :key=index 
             :school=education.school
             :qualification=education.qualification
+            :location="education.location"
+            :period="education.period"
             :descriptions=education.descriptions
             :is_active=is_active(index)
         />
@@ -13,6 +15,7 @@
 import Header from '../molecules/Header'
 import EducationBox from '../molecules/EducationBox'
 import { bus } from '../../main'
+import {educations} from '@/constants'
 
 export default {
     name:'Educations',
@@ -21,12 +24,7 @@ export default {
         EducationBox
     },
     data: () => ({
-        educations: [
-            { school: "ROYAL MELBOURNE INSTITUITION OF TECHNOLOGY", qualification: "Bachelor of Information Technology", 
-                descriptions: ""},
-            { school: "HIGHSCHOOL FOR GIFTED STUDENT - HNUE", qualification: "Graduated in Major of Computer Science", 
-                descriptions: "" }
-        ],
+        educations: educations,
         active_box: -1
     }),
     methods: {

@@ -14,6 +14,7 @@ import Header from '../molecules/Header'
 import Paragraph from '../atoms/Paragraph'
 import Introduction from '../molecules/Introduction'
 import Contact from '../organisms/Contact'
+import {about} from '@/constants'
 
 export default {
     name:'About',
@@ -24,10 +25,7 @@ export default {
         Contact
     },
     data: () => ({
-        paragraphs: [
-            `I am a young, curious individual who enjoys writing code and build things to satisfy self-curiosity and make our life a little bit easier.`,
-            `Beside that, I'm also a Hufflepuff 🧙 who love coffee ☕, and quite often, I draw ugly pixel-arts just for fun.`
-        ]
+        paragraphs: about.paragraphs
     })
 }
 </script>

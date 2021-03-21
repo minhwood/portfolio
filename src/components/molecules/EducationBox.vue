@@ -5,7 +5,8 @@
             :qualification=qualification 
             :is_active=is_active
             :expandable=expandable
-            />
+            ><location-period :period="period" :location="location"></location-period></education-header>
+        
         <div class="education-content row"  :style=display_content>
             <paragraph :paragraph=descriptions />
         </div>
@@ -15,12 +16,14 @@
 <script>
 import Paragraph from '../atoms/Paragraph'
 import EducationHeader from '../atoms/EducationHeader'
+import LocationPeriod from '../atoms/LocationPeriod'
 
 export default {
     name: 'EducationBox',
     components: {
         Paragraph,
-        EducationHeader
+        EducationHeader,
+        LocationPeriod
     },
     props: {
         is_active: {
@@ -29,7 +32,9 @@ export default {
         },
         school: String,
         qualification: String,
-        descriptions: String
+        descriptions: String,
+        location: String,
+        period: String
     },
     computed: {
         display_content() {

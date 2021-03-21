@@ -4,9 +4,10 @@
         <div class="hide-collabs">
             <avatar src="myavatar.png"/>
             <!-- <flipping-avatar src="myavatar.png" /> -->
-            <person-title name="Minh Doan Quang" jobtitle="Just a Casual Developer"/>
+            <person-title name="Minh Doan Quang" jobtitle="Just a Casual Developer" />
             <side-bar-option :current_active_tab=active_tab section_id="about" text="About"/>
             <side-bar-option :current_active_tab=active_tab section_id="skills" text="Skills"/>
+            <side-bar-option :current_active_tab=active_tab section_id="projects" text="Projects"/>
             <side-bar-option :current_active_tab=active_tab section_id="educations" text="Educations"/>
             <side-bar-option :current_active_tab=active_tab section_id="experiences" text="Experiences"/>
             <!-- <side-bar-option :current_active_tab=active_tab section_id="playground" text="Playground"/> -->

@@ -4,9 +4,9 @@
             <Observer/>
             <about/>
             <skills/>
+            <projects/>
             <educations/>
             <experiences/>
-            <!-- <playground/> -->
         </div>
     </div>
 </template>
@@ -15,7 +15,7 @@ import About from '../organisms/About'
 import Experiences from '../organisms/Experiences'
 import Educations from '../organisms/Educations'
 import Skills from '../organisms/Skills'
-// import Playground from '../organisms/Playground' 
+import Projects from '../organisms/Projects'
 import Observer from '../atoms/Observer'
 
 export default {
@@ -25,7 +25,7 @@ export default {
         Experiences,
         Educations,
         Skills,
-        // Playground,
+        Projects,
         Observer
     },
 }
