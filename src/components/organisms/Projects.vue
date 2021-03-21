@@ -2,23 +2,21 @@
     <section id="projects" class="part-container">
         <Header text="PROJECTS" icon="monitor.svg"/>
         <div class="projects-container">
-        <Project 
-            v-for="(project, index) in projects" 
-            :project=project 
-            :key=index />
+            <projects-swiper :projects="projects"></projects-swiper>
         </div>
     </section>
 </template>
 <script>
 import Header from '../molecules/Header'
-import Project from '../molecules/Project'
+import ProjectsSwiper from '../molecules/ProjectsSwiper'
+
 import {projects} from '@/constants'
 
 export default {
     name:'Projects',
     components: {
         Header,
-        Project
+        ProjectsSwiper,
     },
     data: () => ({
         projects:projects
@@ -32,5 +30,6 @@ export default {
 
 .projects-container {
   text-align: center;
+  min-height: 300px;
 }
 </style>

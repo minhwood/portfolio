@@ -1,27 +1,44 @@
+export const about = {
+    paragraphs: [
+        `I am a young, curious individual who enjoys writing code and build things to satisfy self-curiosity and make our life a little bit easier.`,
+        `Beside that, I'm also a Hufflepuff 🧙 who love coffee ☕, and quite often, I draw ugly pixel-arts just for fun.`
+    ]
+}
+
 export const projects = [
     {
+        name:"GTI Connect",
+        img: "gticonnect.png",
+        stacks: ["Python", "Django", "Vuejs", "Heroku", "HTML", "SCSS"],
+        description: "Platform helps Global Talents to connect with Australian Experts for visa nomination"
+    },
+    {
         name:"CSEE Community",
-        img: "weather-app.png",
-        git_url: "https://github.com/minhdq1998/weather-app",
-        demo_url: "https://minhdq1998.github.io/weather-app/"
+        img: "csee-landing.png",
+        demo_url: "https://staging5.csee.study/",
+        stacks: ["Wordpress", "PHP", "HTML", "CSS"],
+        description: "Social media platform for students who are planning or going to study abroad"
     },
     {
-      name:"8-Bits Weather Forecast",
-      img: "weather-app.png",
-      git_url: "https://github.com/minhdq1998/weather-app",
-      demo_url: "https://minhdq1998.github.io/weather-app/"
+        name:"Experts Crawler",
+        stacks: ["Python", "Scrapy", "MySQL"],
+        description: "Crawler designed to scrape over University Backend APIs to collects Universities Experts Information"
     },
     {
-      name:"Body language-telepresence Robot",
-      img: "baxter.jpg",
-      git_url: "https://github.com/minhdq1998/Robot-body-language-telepresence---VXLAB",
-      demo_url: "https://youtu.be/2_N49f9U_EE"
+        name:"Hypeciety",
+        img: "hypeciety-landing.png",
+        git_url: "https://github.com/minhdq1998/Commercial-Clothing-Website-PHP",
+        demo_url: "http://titan.csit.rmit.edu.au/~s3608452/Commercial-Clothing-Website-PHP/home.php",
+        stacks: ["PHP", "Javascript", "HTML", "CSS"],
+        description: "Simple e-commerce clothing website for Hypebeast collector"
     },
     {
-      name:"Hypeciety",
-      img: "hypeciety.png",
-      git_url: "https://github.com/minhdq1998/Commercial-Clothing-Website-PHP",
-      demo_url: "http://titan.csit.rmit.edu.au/~s3608452/Commercial-Clothing-Website-PHP/home.php"
+        name:"Body language-telepresence Robot",
+        img: "baxter.jpg",
+        git_url: "https://github.com/minhdq1998/Robot-body-language-telepresence---VXLAB",
+        demo_url: "https://youtu.be/2_N49f9U_EE",
+        stacks: ["Python", "Gazebo Sim", "ROS"],
+        description: "An implementation of skeleton tracking on Baxter robot for VXLAB, to allow Baxter robot to mimics human action."
     },
 ]
 

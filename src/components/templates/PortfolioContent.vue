@@ -4,9 +4,9 @@
             <Observer/>
             <about/>
             <skills/>
+            <projects/>
             <educations/>
             <experiences/>
-            <projects/>
         </div>
     </div>
 </template>
