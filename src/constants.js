@@ -61,11 +61,18 @@ export const educations = [
 
 export const experiences = [
     { 
+        role:"Freelance Developer",         
+        company: "my desk",  
+        location:"Hanoi",       
+        period:"2020-Present" , 
+        descriptions:"I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australia market."
+    },
+    { 
         role:"Developer",         
-        company: "Septeni Technology",  
+        company: "Septeni Technology (Flinters)",  
         location:"Hanoi",       
         period:"2019-Present" , 
-        descriptions:"Develop Web and ETL applications for big multinational media and digital marketing companies in the world to help them automate their workflows."
+        descriptions:"Develop web application and working with ETL data pipeline for multinational media and digital marketing companies. Help automate workflows, promote digital transformation, utilizing data to accelerate their business."
     },
     { 
         role:"IT Support",            
@@ -86,6 +93,6 @@ export const experiences = [
         company: "FPT Software",        
         location:"Hanoi",       
         period:"2017-2018" , 
-        descriptions:"Build an internal Management System for one of the big four accounting firm."
+        descriptions:"Build an internal tax Management System for one of the big four accounting firm."
     },
 ]
