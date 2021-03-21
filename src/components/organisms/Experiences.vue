@@ -7,6 +7,7 @@
             :location=experience.location
             :period=experience.period
             :descriptions=experience.descriptions
+            :stacks=experience.stacks
             :is_final=is_final_in_list(index)
         />
     </section>

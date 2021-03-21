@@ -9,7 +9,7 @@ export const projects = [
     {
         name:"GTI Connect",
         img: "gticonnect.png",
-        stacks: ["Python", "Django", "Vuejs", "Heroku", "HTML", "SCSS"],
+        stacks: ["Python", "Django", "Vuejs", "HTML", "SCSS"],
         description: "Platform helps Global Talents to connect with Australian Experts for visa nomination"
     },
     {
@@ -65,34 +65,39 @@ export const experiences = [
         company: "my desk",  
         location:"Hanoi",       
         period:"2020-Present" , 
-        descriptions:"I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australian market."
+        descriptions:"I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australian market.",
+        stacks: ["Python", "Django", "Javascript", "Wordpress", "Vuejs", "HTML", "CSS"]
     },
     { 
         role:"Developer",         
         company: "Septeni Technology (Flinters)",  
         location:"Hanoi",       
         period:"2019-Present" , 
-        descriptions:"Develop web application and working with ETL data pipeline for multinational media and digital marketing companies. Help automate workflows, promote digital transformation, utilizing data to accelerate their business."
+        descriptions:"Develop web application and working with ETL data pipeline for multinational media and digital marketing companies. Help automate workflows, promote digital transformation, utilizing data to accelerate their business.",
+        stacks: ["Python", "Django", "Javascript", "Scala", "Vuejs"]
     },
     { 
         role:"IT Support",            
         company: "Emma & Tom",          
         location:"Melbourne",   
         period:"2019" , 
-        descriptions:"Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need and exposed to a multicultural working environment." 
+        descriptions:"Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need and exposed to a multicultural working environment.",
+        stacks: ["Java", "Shopify", "Javascript", "HTML", "CSS"]
     },
     { 
         role:"Teaching Assistant",    
         company: "Code Camp",           
         location:"Melbourne",   
         period:"2018" , 
-        descriptions:"Help deliver interactive lessons, activities that expose primary students to programming and problem-solving."
+        descriptions:"Help deliver interactive lessons, activities that expose primary students to programming and problem-solving.",
+        stacks: ["Scratch", "Python"]
     },
     { 
         role:"Intern Web Developer",  
         company: "FPT Software",        
         location:"Hanoi",       
         period:"2017-2018" , 
-        descriptions:"Build an internal tax Management System for one of the big four accounting firm."
+        descriptions:"Build an internal tax Management System for one of the big four accounting firm.",
+        stacks: [".NET","C#","JQuery", "HTML", "CSS"]
     },
 ]

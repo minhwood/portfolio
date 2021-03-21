@@ -24,16 +24,20 @@ export default {
         stackToColour(stack) {
             switch(stack) {
                 case "Python": return "#3776ab"
+                case "Vuejs": return "#42b883"
+                case "C#": return "#005776"
+                case ".NET": return "#005776"
                 case "Wordpress": return "#21759b"
                 case "HTML": return "#FF4500"
                 case "CSS": return "#1E90FF"
                 case "SCSS": return "#FF69B4"
                 case "Django": return "#092e20"
-                case "Javascript": return "#f0db4f"
+                case "Javascript": return "#F0DB4F"
                 case "PHP": return "#787CB5"
                 case "Scrapy": return "#60a839"
                 case "MySQL": return "#00758F"
                 case "Heroku": return "#6567a5"
+                case "Scala": return "#DE3423"
                 default: return this.stringToColour(this.stack)
             }
         }
@@ -41,7 +45,8 @@ export default {
     computed:{
         styleClass() {
             return {
-                backgroundColor: this.stackToColour(this.stack)
+                backgroundColor: this.stackToColour(this.stack),
+                color: this.stack=="Javascript" ? "var(--secondary-bg-color)":"var(--default-text-color);"
             }
         }
     }
@@ -51,7 +56,6 @@ export default {
 <style scoped>
 .stack-tag {
     padding: 5px;
-    color: var(--default-text-color);
     border-radius: 4px;
     margin: 5px;
     display: inline-block;

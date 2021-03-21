@@ -4,6 +4,7 @@
       <div class="experience-content">
         <experiences-header :role=role :company=company :location=location :period=period />
         <paragraph :paragraph=descriptions />
+        <StackTag v-for="(stack, index) in stacks" :key="index" :stack="stack" />
       </div>
       <div class="empty-padding"></div>
   </div>
@@ -12,13 +13,15 @@
 import TimelineHeader from '../atoms/TimelineHeader'
 import Paragraph from '../atoms/Paragraph'
 import ExperiencesHeader from '../atoms/ExperiencesHeader'
+import StackTag from '../atoms/StackTag'
 
 export default {
     name: 'ExperienceBox',
     components:{
         TimelineHeader,
         Paragraph,
-        ExperiencesHeader
+        ExperiencesHeader,
+        StackTag
     },
     props: {
         is_final: {
@@ -29,7 +32,8 @@ export default {
         company: String,
         location: String,
         period: String,
-        descriptions: String
+        descriptions: String,
+        stacks: Array
     }
 }
 </script>
