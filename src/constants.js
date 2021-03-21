@@ -65,7 +65,7 @@ export const experiences = [
         company: "my desk",  
         location:"Hanoi",       
         period:"2020-Present" , 
-        descriptions:"I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australia market."
+        descriptions:"I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australian market."
     },
     { 
         role:"Developer",         
