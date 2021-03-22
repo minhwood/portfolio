@@ -56,7 +56,7 @@ export default {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
-    transition: 0.25s;
+    transition: 0.45s;
     background: var(--secondary-bg-color);
 }
 
@@ -76,13 +76,13 @@ export default {
     height: 100%;
     z-index: 2000;
     padding: 10px;
-    transition: 0.25s;
+    transition: 0.45s;
 }
 
 .project-box-content .top {
     position: relative;
     height: 50%;
-    transition: all 0.25s;
+    transition: all 0.45s;
 }
 
 h5 {
