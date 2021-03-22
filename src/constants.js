@@ -70,12 +70,20 @@ export const experiences = [
     },
     { 
         role:"Developer",         
-        company: "Septeni Technology (Flinters)",  
+        company: "Ginga International",  
         location:"Hanoi",       
         period:"2019-Present" , 
         descriptions:"Develop web application and working with ETL data pipeline for multinational media and digital marketing companies. Help automate workflows, promote digital transformation, utilizing data to accelerate their business.",
-        stacks: ["Python", "Django", "Javascript", "Scala", "Vuejs"]
+        stacks: ["Python", "Django", "Javascript", "Vuejs"]
     },
+    // { 
+    //     role:"Developer",         
+    //     company: "Septeni Technology (Flinters)",  
+    //     location:"Hanoi",       
+    //     period:"2019-Present" , 
+    //     descriptions:"Develop web application and working with ETL data pipeline for multinational media and digital marketing companies. Help automate workflows, promote digital transformation, utilizing data to accelerate their business.",
+    //     stacks: ["Python", "Django", "Javascript", "Scala", "Vuejs"]
+    // },
     { 
         role:"IT Support",            
         company: "Emma & Tom",          
