@@ -24,7 +24,7 @@ export default {
         stackToColour(stack) {
             switch(stack) {
                 case "Python": return "#3776ab"
-                case "Vuejs": return "#42b883"
+                case "Vue": return "#42b883"
                 case "C#": return "#005776"
                 case ".NET": return "#005776"
                 case "Wordpress": return "#21759b"
@@ -38,6 +38,7 @@ export default {
                 case "MySQL": return "#00758F"
                 case "Heroku": return "#6567a5"
                 case "Scala": return "#DE3423"
+                case "React": return "#61DBFB"
                 default: return this.stringToColour(this.stack)
             }
         }

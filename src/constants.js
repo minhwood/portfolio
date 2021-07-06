@@ -9,7 +9,7 @@ export const projects = [
     {
         name:"GTI Connect",
         img: "gticonnect.png",
-        stacks: ["Python", "Django", "Vuejs", "HTML", "SCSS"],
+        stacks: ["Python", "Django", "Vue", "HTML", "SCSS"],
         description: "Platform helps Global Talents to connect with Australian Experts for visa nomination"
     },
     {
@@ -66,7 +66,7 @@ export const experiences = [
         location:"Hanoi",       
         period:"2020-Present" , 
         descriptions:"I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australian market.",
-        stacks: ["Python", "Django", "Javascript", "Wordpress", "Vuejs", "HTML", "CSS"]
+        stacks: ["Python", "Django", "Javascript", "Wordpress", "Vue", "HTML", "CSS"]
     },
     { 
         role:"Developer",         
@@ -74,7 +74,7 @@ export const experiences = [
         location:"Hanoi",       
         period:"2019-Present" , 
         descriptions:"Develop web application and working with ETL data pipeline for multinational media and digital marketing companies. Help automate workflows, promote digital transformation, utilizing data to accelerate their business.",
-        stacks: ["Python", "Django", "Javascript", "Scala", "Vuejs", "Reactjs"]
+        stacks: ["Python", "Django", "Javascript", "Scala", "Vue", "React"]
     },
     { 
         role:"IT Support",            

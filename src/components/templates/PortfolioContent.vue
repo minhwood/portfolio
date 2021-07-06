@@ -7,6 +7,7 @@
             <projects/>
             <educations/>
             <experiences/>
+            <job-detail-modal />
         </div>
     </div>
 </template>
@@ -17,6 +18,7 @@ import Educations from '../organisms/Educations'
 import Skills from '../organisms/Skills'
 import Projects from '../organisms/Projects'
 import Observer from '../atoms/Observer'
+import JobDetailModal from '../molecules/JobDetailModal'
 
 export default {
     name:'PortfolioContent',
@@ -26,7 +28,8 @@ export default {
         Educations,
         Skills,
         Projects,
-        Observer
+        Observer,
+        JobDetailModal
     },
 }
 </script>
