@@ -3,7 +3,7 @@
       <timeline-header :is_final=is_final />
       <div class="experience-content">
         <experiences-header :role=role :company=company :location=location :period=period />
-        <paragraph :paragraph=descriptions />
+        <paragraph v-for="(paragraph,index) in descriptions" :key="index" :paragraph=paragraph />
         <StackTag v-for="(stack, index) in stacks" :key="index" :stack="stack" />
       </div>
       <div class="empty-padding"></div>

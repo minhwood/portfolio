@@ -9,7 +9,8 @@ export const projects = [
     {
         name:"GTI Connect",
         img: "gticonnect.png",
-        stacks: ["Python", "Django", "Vuejs", "HTML", "SCSS"],
+        demo_url: "https://gticonnect.neksus.com.au/",
+        stacks: ["Python", "Django", "Vue", "HTML", "SCSS"],
         description: "Platform helps Global Talents to connect with Australian Experts for visa nomination"
     },
     {
@@ -65,23 +66,46 @@ export const experiences = [
         company: "my desk",  
         location:"Hanoi",       
         period:"2020-Present" , 
-        descriptions:"I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australian market.",
-        stacks: ["Python", "Django", "Javascript", "Wordpress", "Vuejs", "HTML", "CSS"]
+        descriptions:[
+            "I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australian market.",
+            "Research and develop across frontend, hire and manage team members. Control, plan and manage the team's progress.",
+            "Communicate the client to understand their needs and transform it to matching requirements for the team to develop.",
+        ],
+        stacks: ["Python", "Django", "Javascript", "Wordpress", "Vue", "HTML", "CSS"]
+    },
+    { 
+        role:"Project Coordinator",         
+        company: "Septeni Technology (Flinters)",  
+        location:"Hanoi",       
+        period:"2021 - Present" , 
+        descriptions:[
+            "Became the person in charge for KFDD team. Team sepcified in platforms, services development for Dentsu Digital Inc.",
+            "Keep projects on track by planning, observing and allocating resources. Stay close to projects development process, review code, design, processes also implementing new features.",
+            "Consult team members about creating objectives and how to achieve them. Help members resolve technical, working and personal issues",
+            "Collaborate with other leaders and managers to improve aspects of company, resolve company's issues."
+        ],
+        stacks: ["Python", "Django", "Javascript", "Scala", "Vue", "React"]
     },
     { 
         role:"Developer",         
         company: "Septeni Technology (Flinters)",  
         location:"Hanoi",       
-        period:"2019-Present" , 
-        descriptions:"Develop web application and working with ETL data pipeline for multinational media and digital marketing companies. Help automate workflows, promote digital transformation, utilizing data to accelerate their business.",
-        stacks: ["Python", "Django", "Javascript", "Scala", "Vuejs", "Reactjs"]
+        period:"2019 - 2020" , 
+        descriptions:[
+            "Develop web application and working with ETL data pipeline for media and digital marketing companies.", 
+            "Developed new features, platforms, monitored and maintained old systems, created and maintained documentation.",
+        ],
+        stacks: ["Python", "Django", "Javascript", "Scala", "Vue", "React"]
     },
     { 
         role:"IT Support",            
         company: "Emma & Tom",          
         location:"Melbourne",   
         period:"2019" , 
-        descriptions:"Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need and exposed to a multicultural working environment.",
+        descriptions:[
+            "Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need.",
+            "Exposed to a multicultural working environment, communicate across multiple departments and understands their problems, issues.",
+        ],
         stacks: ["Shopify", "Javascript", "HTML", "CSS"]
     },
     { 
@@ -89,7 +113,9 @@ export const experiences = [
         company: "Code Camp",           
         location:"Melbourne",   
         period:"2018" , 
-        descriptions:"Help deliver interactive lessons, activities that expose primary students to programming and problem-solving.",
+        descriptions:[
+            "Help deliver interactive lessons, activities that expose primary students to programming and problem-solving.",
+        ],
         stacks: ["Scratch", "Python"]
     },
     { 
@@ -97,7 +123,9 @@ export const experiences = [
         company: "FPT Software",        
         location:"Hanoi",       
         period:"2017-2018" , 
-        descriptions:"Build an internal tax Management System for one of the big four accounting firm.",
+        descriptions:[
+            "Build an internal tax Management System for one of the KPMG",
+        ],
         stacks: [".NET","C#","JQuery", "HTML", "CSS"]
     },
 ]

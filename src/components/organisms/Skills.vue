@@ -5,6 +5,7 @@
         <skill-icon description="Python" src="python.svg" />
         <skill-icon description="Django" src="djangopixel.svg" />
         <skill-icon description="Javascript" src="javascriptpixel.svg" />
+        <skill-icon description="React" src="react.svg" />
         <skill-icon description="VueJs" src="vuepixel.svg" />
         <skill-icon description="HTML" src="html18.svg" />
         <skill-icon description="CSS" src="css18.svg" />
