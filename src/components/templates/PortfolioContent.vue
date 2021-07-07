@@ -7,11 +7,12 @@
             <projects/>
             <educations/>
             <experiences/>
-            <job-detail-modal />
+            <job-detail-modal :is_show="job_detail_display_state" />
         </div>
     </div>
 </template>
 <script>
+import { bus } from '../../main'
 import About from '../organisms/About'
 import Experiences from '../organisms/Experiences'
 import Educations from '../organisms/Educations'
@@ -31,6 +32,17 @@ export default {
         Observer,
         JobDetailModal
     },
+    data: () => ({
+        job_detail_display_state: false
+    }),
+    methods: {
+        change_job_detail_modal_state(state) {
+            this.job_detail_display_state = state
+        }
+    },
+    created() {
+        bus.$on('change_jobdetail_display_state',(state) => this.change_job_detail_modal_state(state))
+    }
 }
 </script>
 <style scoped>
