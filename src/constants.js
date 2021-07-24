@@ -1,7 +1,7 @@
 export const about = {
     paragraphs: [
-        `I am a young, curious individual who enjoys writing code and build things to satisfy self-curiosity and make our life a little bit easier.`,
-        `Beside that, I'm also a Hufflepuff 🧙 who love coffee ☕, and quite often, I draw ugly pixel-arts just for fun.`
+        `I am a young, curious individual who enjoy writing code and build things to satisfy self-curiosity and make our life a little bit easier.`,
+        `Beside, I'm also a Hufflepuff 🧙 who love coffee ☕, and quite often, I draw ugly pixel-arts just for fun.`
     ]
 }
 
@@ -81,9 +81,7 @@ export const experiences = [
         location:"Hanoi",       
         period:"2020-Present" , 
         descriptions:[
-            "I started my freelance journey since 2020. I've done web application development, data scrapping and collaborated with talented people to create products for startups in Australian market.",
-            "Research and develop across frontend, hire and manage team members. Control, plan and manage the team's progress.",
-            "Communicate the client to understand their needs and transform it to matching requirements for the team to develop.",
+            "Having started freelancing in 2020, I’ve done web application development, data scraping and collaborated with talented people to create products for startups in Australian and Vietnamese markets. While researching and developing, I have also been managing my team members and the development progress. Through communicating with clients, I understand their needs and transform it to matching requirements for the team to develop."
         ],
         stacks: ["Python", "Django", "Javascript", "Wordpress", "Vue", "HTML", "CSS"]
     },
@@ -93,10 +91,7 @@ export const experiences = [
         location:"Hanoi",       
         period:"2021 - Present" , 
         descriptions:[
-            "Became the person in charge for KFDD team. Team sepcified in platforms, services development for Dentsu Digital Inc.",
-            "Keep projects on track by planning, observing and allocating resources. Stay close to projects development process, review code, design, processes also implementing new features.",
-            "Consult team members about creating objectives and how to achieve them. Help members resolve technical, working and personal issues",
-            "Collaborate with other leaders and managers to improve aspects of company, resolve company's issues."
+            "Became the person in charge of the KFDD team which specified in platforms and services development for Dentsu Inc, I kept track of the project by planning, observing and allocating resources, at the same time implementing new features, and supported members by helping them resolve technical, work, and personal issues."
         ],
         stacks: ["Python", "Django", "Javascript", "Scala", "Vue", "React"]
     },
@@ -106,8 +101,7 @@ export const experiences = [
         location:"Hanoi",       
         period:"2019 - 2020" , 
         descriptions:[
-            "Develop web application and working with ETL data pipeline for media and digital marketing companies.", 
-            "Developed new features, platforms, monitored and maintained old systems, created and maintained documentation.",
+            "I developed web applications and worked with ETL data pipelines for multimedia and digital marketing companies. In addition to developing new features and platforms, I also maintained old systems and documentations.",
         ],
         stacks: ["Python", "Django", "Javascript", "Scala", "Vue", "React"]
     },
@@ -117,8 +111,7 @@ export const experiences = [
         location:"Melbourne",   
         period:"2019" , 
         descriptions:[
-            "Maintain and monitor the eCommerce website and fleet management system. Provide IT support to other departments in need.",
-            "Exposed to a multicultural working environment, communicate across multiple departments and understands their problems, issues.",
+            "Maintained and monitored the eCommerce website and fleet management system, also providing support to other departments in need. Be exposed to a multicultural working environment which involves communication across multiple departments and understands their problems and issues."
         ],
         stacks: ["Shopify", "Javascript", "HTML", "CSS"]
     },
@@ -138,7 +131,7 @@ export const experiences = [
         location:"Hanoi",       
         period:"2017-2018" , 
         descriptions:[
-            "Build an internal tax Management System for one of the KPMG",
+            "Build an internal tax Management System for KPMG",
         ],
         stacks: [".NET","C#","JQuery", "HTML", "CSS"]
     },
