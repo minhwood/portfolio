@@ -7,6 +7,20 @@ export const about = {
 
 export const projects = [
     {
+        name:"Tutoro",
+        img: "tutoro.png",
+        demo_url: "https://tutoro.vn",
+        stacks: ["Python", "Django", "Flutter"],
+        description: "Platform helps Teky teachers to managing their classes and information"
+    },
+    {
+        name:"CSEE Exchange",
+        img: "csee.png",
+        demo_url: "https://www.csee.org.au/",
+        stacks: ["Wordpress", "PHP", "HTML", "CSS"],
+        description: "CSEE Exchange website"
+    },
+    {
         name:"GTI Connect",
         img: "gticonnect.png",
         demo_url: "https://gticonnect.neksus.com.au/",

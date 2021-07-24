@@ -2,10 +2,10 @@
   <div class="introduct-box">
     <div class="introduct-text">
           <div class="centralize">
-            <h2> Hi,<br>I'm Minh,<br>Web Developer </h2>
+            <h2> Hi,<br>I'm Minh,<br>Software Engineer </h2>
           </div>
       </div>
-    <img class="second-avatar" src="../../assets/background.png" />
+    <img class="second-avatar" src="../../assets/background2.png" />
   </div>
 </template>
 

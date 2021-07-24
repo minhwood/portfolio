@@ -39,6 +39,7 @@ export default {
                 case "Heroku": return "#6567a5"
                 case "Scala": return "#DE3423"
                 case "React": return "#61DBFB"
+                case "Flutter": return "#A8D0DB"
                 default: return this.stringToColour(this.stack)
             }
         }
