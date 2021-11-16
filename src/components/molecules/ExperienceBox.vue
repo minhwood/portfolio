@@ -3,7 +3,7 @@
       <timeline-header :is_final=is_final />
       <div class="experience-content">
         <experiences-header :role=role :company=company :location=location :period=period />
-        <paragraph v-for="(paragraph,index) in descriptions" :key="index" :paragraph=paragraph />
+        <paragraph v-for="(paragraph, index) in descriptions" :key="paragraph[0] + index" :paragraph=paragraph />
         <StackTag v-for="(stack, index) in stacks" :key="index" :stack="stack" />
       </div>
       <div class="empty-padding"></div>
@@ -32,7 +32,7 @@ export default {
         company: String,
         location: String,
         period: String,
-        descriptions: String,
+        descriptions: Array,
         stacks: Array
     }
 }
