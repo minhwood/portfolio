@@ -11,33 +11,78 @@ export const projects = [
         img: "tutoro.png",
         demo_url: "https://tutoro.vn",
         stacks: ["Python", "Django", "Flutter"],
-        description: "Platform helps Teky teachers to managing their classes and information"
+        description: "Platform helps Teky teachers to managing their classes and information",
+        role: "Lead backend developer",
+        contributions: [
+            "Design and intergrate Tutoro service into Teky Education System",
+            "Over 100+ API endpoints",
+            "Intergrate 3rd party Sendbird Chat Service",
+            "Implement token base authentication",
+            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Implement OTP features for authentication and verification"
+        ]
     },
     {
         name:"CSEE Exchange",
         img: "csee.png",
         demo_url: "https://www.csee.org.au/",
         stacks: ["Wordpress", "PHP", "HTML", "CSS"],
-        description: "CSEE Exchange website"
+        description: "CSEE Exchange website",
+        role: "Lead backend developer",
+        contributions: [
+            "Design and intergrate Tutoro service into Teky Education System",
+            "Over 100+ API endpoints",
+            "Intergrate 3rd party Sendbird Chat Service",
+            "Implement token base authentication",
+            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Implement OTP features for authentication and verification"
+        ]
     },
     {
         name:"GTI Connect",
         img: "gticonnect.png",
         demo_url: "https://gticonnect.neksus.com.au/",
         stacks: ["Python", "Django", "Vue", "HTML", "SCSS"],
-        description: "Platform helps Global Talents to connect with Australian Experts for visa nomination"
+        description: "Platform helps Global Talents to connect with Australian Experts for visa nomination",
+        role: "Lead backend developer",
+        contributions: [
+            "Design and intergrate Tutoro service into Teky Education System",
+            "Over 100+ API endpoints",
+            "Intergrate 3rd party Sendbird Chat Service",
+            "Implement token base authentication",
+            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Implement OTP features for authentication and verification"
+        ]
     },
     {
         name:"CSEE Community",
         img: "csee-landing.png",
         demo_url: "https://staging5.csee.study/",
         stacks: ["Wordpress", "PHP", "HTML", "CSS"],
-        description: "Social media platform for students who are planning or going to study abroad"
+        description: "Social media platform for students who are planning or going to study abroad",
+        role: "Lead backend developer",
+        contributions: [
+            "Design and intergrate Tutoro service into Teky Education System",
+            "Over 100+ API endpoints",
+            "Intergrate 3rd party Sendbird Chat Service",
+            "Implement token base authentication",
+            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Implement OTP features for authentication and verification"
+        ]
     },
     {
         name:"Experts Crawler",
         stacks: ["Python", "Scrapy", "MySQL"],
-        description: "Crawler designed to scrape over University Backend APIs to collects Universities Experts Information"
+        description: "Crawler designed to scrape over University Backend APIs to collects Universities Experts Information",
+        role: "Lead backend developer",
+        contributions: [
+            "Design and intergrate Tutoro service into Teky Education System",
+            "Over 100+ API endpoints",
+            "Intergrate 3rd party Sendbird Chat Service",
+            "Implement token base authentication",
+            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Implement OTP features for authentication and verification"
+        ]
     },
     {
         name:"Hypeciety",
@@ -45,7 +90,16 @@ export const projects = [
         git_url: "https://github.com/minhdq1998/Commercial-Clothing-Website-PHP",
         demo_url: "http://titan.csit.rmit.edu.au/~s3608452/Commercial-Clothing-Website-PHP/home.php",
         stacks: ["PHP", "Javascript", "HTML", "CSS"],
-        description: "Simple e-commerce clothing website for Hypebeast collector"
+        description: "Simple e-commerce clothing website for Hypebeast collector",
+        role: "Lead backend developer",
+        contributions: [
+            "Design and intergrate Tutoro service into Teky Education System",
+            "Over 100+ API endpoints",
+            "Intergrate 3rd party Sendbird Chat Service",
+            "Implement token base authentication",
+            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Implement OTP features for authentication and verification"
+        ]
     },
     {
         name:"Body language-telepresence Robot",
@@ -53,7 +107,16 @@ export const projects = [
         git_url: "https://github.com/minhdq1998/Robot-body-language-telepresence---VXLAB",
         demo_url: "https://youtu.be/2_N49f9U_EE",
         stacks: ["Python", "Gazebo Sim", "ROS"],
-        description: "An implementation of skeleton tracking on Baxter robot for VXLAB, to allow Baxter robot to mimics human action."
+        description: "An implementation of skeleton tracking on Baxter robot for VXLAB, to allow Baxter robot to mimics human action.",
+        role: "Lead backend developer",
+        contributions: [
+            "Design and intergrate Tutoro service into Teky Education System",
+            "Over 100+ API endpoints",
+            "Intergrate 3rd party Sendbird Chat Service",
+            "Implement token base authentication",
+            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Implement OTP features for authentication and verification"
+        ]
     },
 ]
 
@@ -63,14 +126,19 @@ export const educations = [
         qualification: "Bachelor of Information Technology",
         period: "2017-2019",
         location: "Melbourne",
-        descriptions: ""
+        descriptions: [
+            "GPA: 3.3",
+            "Graduate with High Distinction"
+        ]
     },
     { 
         school: "HIGHSCHOOL FOR GIFTED STUDENT - HNUE", 
         qualification: "Graduated in Major of Computer Science", 
         period: "2015-1017",
         location: "Hanoi",
-        descriptions: "" 
+        descriptions: [
+            "Member of school Competitive Programming Olympiad team",
+        ] 
     }
 ]
 

@@ -10,15 +10,11 @@
             <h5 style="font-weight: bold;">{{project.name}}</h5>
           </div>
           <div class="middle">
-              <div>{{project.description}}</div>
-              <div class="retro-button" 
-                v-if="project.git_url" 
-                v-on:click="redirect_to(project.git_url)">Source Code</div>
-              <div 
-                class="retro-button"
-                v-if="project.demo_url" 
-                v-on:click="redirect_to(project.demo_url)"
-                >Demo</div>
+              <div class="project-shorthand">{{project_shorthand(project.description)}}</div>
+              <div class="retro-button"
+                v-on:click="change_display_mode()">
+                More Info
+              </div>
           </div>
           <div class="bottom">
             <div class="project-stacks">
@@ -34,6 +30,7 @@
 
 <script>
 import StackTag from '../atoms/StackTag'
+import {bus} from  '../../main'
 
 export default {
     name:"ProjectContainer",
@@ -44,6 +41,14 @@ export default {
     methods: {
       redirect_to(url) {
         window.open(url, '_blank')
+      },
+      change_display_mode() {
+        bus.$emit('change_jobdetail_display_state', {state:true, project:this.project})
+      },
+      project_shorthand(description) {
+        return description.length > 120 ?
+          description.substring(0, 120) + "..." :
+          description 
       }
     }
 }
@@ -100,6 +105,10 @@ h5 {
     display: none;
     margin-bottom: 10px;
     padding-bottom: 40px;
+}
+
+.project-box-content .middle .project-shorthand {
+  height: calc(30px * 4); 
 }
 
 .project-box-content:hover .top {

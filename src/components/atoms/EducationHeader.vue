@@ -3,12 +3,10 @@
     <div class="col-12 col-md-11">
       <div class="school-header" >{{school}}</div>
       <div class="qualification-header">{{qualification}}</div>
+      <slot></slot>
     </div>
     <div class="col-12 col-md-1 education-collab" v-if="expandable">
       <font-awesome-icon class="education-collab-icon" :icon="collab_icon" />
-    </div>
-    <div class="col-12 col-md-11">
-        <slot></slot>
     </div>
   </div>
 </template>
@@ -56,6 +54,8 @@ export default {
     padding: 20px;
     cursor: pointer;
     background: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: row;
 }
 
 .school-header {
