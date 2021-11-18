@@ -1,6 +1,6 @@
 export const about = {
     paragraphs: [
-        `I am a young, curious individual who enjoy writing code and build things to satisfy self-curiosity and make our life a little bit easier.`,
+        `I am a young, curious individual who is seeking challenges to learn and grow in the Software Development industry.`,
         `Beside, I'm also a Hufflepuff 🧙 who love coffee ☕, and quite often, I draw ugly pixel-arts just for fun.`
     ]
 }
@@ -14,12 +14,12 @@ export const projects = [
         description: "Platform helps Teky teachers to managing their classes and information",
         role: "Lead backend developer",
         contributions: [
-            "Design and intergrate Tutoro service into Teky Education System",
-            "Over 100+ API endpoints",
+            "Design and intergrate Tutoro service into Teky Education system",
+            "Provide over 100+ API endpoints",
             "Intergrate 3rd party Sendbird Chat Service",
-            "Implement token base authentication",
-            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
-            "Implement OTP features for authentication and verification"
+            "Implement Token base authentication",
+            "Accomplish 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+            "Apply OTP features for authentication and verification"
         ]
     },
     {
@@ -28,94 +28,81 @@ export const projects = [
         demo_url: "https://www.csee.org.au/",
         stacks: ["Wordpress", "PHP", "HTML", "CSS"],
         description: "CSEE Exchange website",
-        role: "Lead backend developer",
+        role: "Developer",
         contributions: [
-            "Design and intergrate Tutoro service into Teky Education System",
-            "Over 100+ API endpoints",
-            "Intergrate 3rd party Sendbird Chat Service",
-            "Implement token base authentication",
-            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
-            "Implement OTP features for authentication and verification"
+            "Design the site appearance",
+            "Intergrate Theme to the site",
+            "Customize Wordpress themes to accommodate the design"
         ]
     },
     {
         name:"GTI Connect",
         img: "gticonnect.png",
         demo_url: "https://gticonnect.neksus.com.au/",
-        stacks: ["Python", "Django", "Vue", "HTML", "SCSS"],
+        stacks: ["Python", "Django", "Vue", "HTML", "SCSS", "Javascript"],
         description: "Platform helps Global Talents to connect with Australian Experts for visa nomination",
         role: "Lead backend developer",
         contributions: [
-            "Design and intergrate Tutoro service into Teky Education System",
-            "Over 100+ API endpoints",
-            "Intergrate 3rd party Sendbird Chat Service",
-            "Implement token base authentication",
-            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
-            "Implement OTP features for authentication and verification"
+            "Design and intergrate the whole site features",
+            "Provid over 50+ endpoints",
+            "Implement Chat with WebSocket",
+            "Intergrate Marketpalce payments system with Stripe",
+            "Implement JWT Authentication flow"
         ]
     },
     {
         name:"CSEE Community",
         img: "csee-landing.png",
-        demo_url: "https://staging5.csee.study/",
-        stacks: ["Wordpress", "PHP", "HTML", "CSS"],
-        description: "Social media platform for students who are planning or going to study abroad",
-        role: "Lead backend developer",
+        demo_url: "https://csee.study/",
+        stacks: ["Wordpress", "PHP", "HTML", "CSS", "Javascript", "JQuery"],
+        description: "Social media platform for students who are planning or going to study abroad. Built with Wordpress and Buddyboss, Learndash LMS plugins as the base",
+        role: "Lead Developer",
         contributions: [
-            "Design and intergrate Tutoro service into Teky Education System",
-            "Over 100+ API endpoints",
-            "Intergrate 3rd party Sendbird Chat Service",
-            "Implement token base authentication",
-            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
-            "Implement OTP features for authentication and verification"
+            "Communicate with the client to understand their needs and transform it to matching requirements.",
+            "Research, plan across all dimensions of project from technologies used to hiring team members",
+            "Keep track of team progress to accomplished the project out come",
+            "Customize and intergrate multiple Wordpress plugin on to site to meet the designed application",
+            "Implement social media features, like newfeed, chat, blog, friendlists with BuddyBoss plugin",
+            "Support online study features using LearnDash LMS",
         ]
     },
     {
         name:"Experts Crawler",
         stacks: ["Python", "Scrapy", "MySQL"],
         description: "Crawler designed to scrape over University Backend APIs to collects Universities Experts Information",
-        role: "Lead backend developer",
+        role: "Developer",
         contributions: [
-            "Design and intergrate Tutoro service into Teky Education System",
-            "Over 100+ API endpoints",
-            "Intergrate 3rd party Sendbird Chat Service",
-            "Implement token base authentication",
-            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
-            "Implement OTP features for authentication and verification"
+            "Implement a scrapper auto script to scrape university sites for university experts information",
+            "Support over 30+ university websites"
         ]
     },
-    {
-        name:"Hypeciety",
-        img: "hypeciety-landing.png",
-        git_url: "https://github.com/minhdq1998/Commercial-Clothing-Website-PHP",
-        demo_url: "http://titan.csit.rmit.edu.au/~s3608452/Commercial-Clothing-Website-PHP/home.php",
-        stacks: ["PHP", "Javascript", "HTML", "CSS"],
-        description: "Simple e-commerce clothing website for Hypebeast collector",
-        role: "Lead backend developer",
-        contributions: [
-            "Design and intergrate Tutoro service into Teky Education System",
-            "Over 100+ API endpoints",
-            "Intergrate 3rd party Sendbird Chat Service",
-            "Implement token base authentication",
-            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
-            "Implement OTP features for authentication and verification"
-        ]
-    },
+    // {
+    //     name:"Hypeciety",
+    //     img: "hypeciety-landing.png",
+    //     demo_url: "http://titan.csit.rmit.edu.au/~s3608452/Commercial-Clothing-Website-PHP/home.php",
+    //     stacks: ["PHP", "Javascript", "HTML", "CSS"],
+    //     description: "Simple e-commerce clothing website for Hypebeast collector",
+    //     role: "Lead backend developer",
+    //     contributions: [
+    //         "Design and intergrate Tutoro service into Teky Education System",
+    //         "Over 100+ API endpoints",
+    //         "Intergrate 3rd party Sendbird Chat Service",
+    //         "Implement token base authentication",
+    //         "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
+    //         "Implement OTP features for authentication and verification"
+    //     ]
+    // },
     {
         name:"Body language-telepresence Robot",
         img: "baxter.jpg",
-        git_url: "https://github.com/minhdq1998/Robot-body-language-telepresence---VXLAB",
         demo_url: "https://youtu.be/2_N49f9U_EE",
         stacks: ["Python", "Gazebo Sim", "ROS"],
         description: "An implementation of skeleton tracking on Baxter robot for VXLAB, to allow Baxter robot to mimics human action.",
-        role: "Lead backend developer",
+        role: "Algorithm developer",
         contributions: [
-            "Design and intergrate Tutoro service into Teky Education System",
-            "Over 100+ API endpoints",
-            "Intergrate 3rd party Sendbird Chat Service",
-            "Implement token base authentication",
-            "Support 4 Social Authentication (Apple, Facebook, Microsoft, Google)",
-            "Implement OTP features for authentication and verification"
+            "Research apply GRPC protocol to create communication channel between the Robot and Kinect cammera",
+            "Design and implement the Algorithm for the robot to mimic the human motions base on skeleton points",
+            "Create and structuralize documents"
         ]
     },
 ]
@@ -149,7 +136,11 @@ export const experiences = [
         location:"Hanoi",       
         period:"2020-Present" , 
         descriptions:[
-            "Having started freelancing in 2020, I’ve done web application development, data scraping and collaborated with talented people to create products for startups in Australian and Vietnamese markets. While researching and developing, I have also been managing my team members and the development progress. Through communicating with clients, I understand their needs and transform it to matching requirements for the team to develop."
+            "Build web application and data scraping tools for startups in Australian and Vietnamese market.",
+            "Research and develop across all aspects of a web application to select technologies.",
+            "Manage, recruit and coordinate team members from over the globe.",
+            "Control, plan and manage the team process.",
+            "Communiucate with clients to understand their needs and transform them into matching requirements.",
         ],
         stacks: ["Python", "Django", "Javascript", "Wordpress", "Vue", "HTML", "CSS"]
     },
@@ -159,9 +150,13 @@ export const experiences = [
         location:"Hanoi",       
         period:"2021 - Present" , 
         descriptions:[
-            "Became the person in charge of the KFDD team which specified in platforms and services development for Dentsu Inc, I kept track of the project by planning, observing and allocating resources, at the same time implementing new features, and supported members by helping them resolve technical, work, and personal issues."
+            "In charge of the KFDD team which specified in platforms, services development for Dentsu Digital Inc.",
+            "Helpe company sign the largest outsources contract in the company history.",
+            "Keep projects on track by planning, observing and allocating resources, meanwhile stay close to the project development process.",
+            "Review code, designs, processes along with developing new features.",
+            "Consult team members about creating objectives and how to achieve them. Help member to resolve technical & work problems, and personal issues.",
         ],
-        stacks: ["Python", "Django", "Javascript", "Scala", "Vue", "React"]
+        stacks: ["MySQL", "Python", "Django", "Javascript", "Vue", "React", "Apache Airflow", "Google Big Query", "Treasure Data", "AWS Batch", "AWS Serverless", "AWS Lambda"]
     },
     { 
         role:"Developer",         
@@ -169,9 +164,11 @@ export const experiences = [
         location:"Hanoi",       
         period:"2019 - 2020" , 
         descriptions:[
-            "I developed web applications and worked with ETL data pipelines for multimedia and digital marketing companies. In addition to developing new features and platforms, I also maintained old systems and documentations.",
+            "Develop web applications and worked with ETL data pipeline for media and digital marketing companies.",
+            "Develop new features, platforms, monitored and maintained old systems.",
+            "Create and structuralized project documents."
         ],
-        stacks: ["Python", "Django", "Javascript", "Scala", "Vue", "React"]
+        stacks: ["MySQL", "Python", "Django", "Javascript", "Scala", "Vue", "React"]
     },
     { 
         role:"IT Support",            
@@ -179,9 +176,11 @@ export const experiences = [
         location:"Melbourne",   
         period:"2019" , 
         descriptions:[
-            "Maintained and monitored the eCommerce website and fleet management system, also providing support to other departments in need. Be exposed to a multicultural working environment which involves communication across multiple departments and understands their problems and issues."
+            "Maintain and monitored the eCommerce website and fleet management system.",
+            "Develop private Shopify application to help create ads on Google.",
+            "Being expose to a multicultural working environment which involves communicating across multiple department."
         ],
-        stacks: ["Shopify", "Javascript", "HTML", "CSS"]
+        stacks: ["Shopify", "Google Ad API", "Flask", "Python", "Javascript", "HTML", "CSS"]
     },
     { 
         role:"Teaching Assistant",    
@@ -190,8 +189,9 @@ export const experiences = [
         period:"2018" , 
         descriptions:[
             "Help deliver interactive lessons, activities that expose primary students to programming and problem-solving.",
+            "Train the ability to explain, deliver difficult concepts to people who have no prior knowledge in programming."
         ],
-        stacks: ["Scratch", "Python"]
+        stacks: ["Scratch"]
     },
     { 
         role:"Intern Web Developer",  
@@ -199,7 +199,10 @@ export const experiences = [
         location:"Hanoi",       
         period:"2017-2018" , 
         descriptions:[
-            "Build an internal tax Management System for KPMG",
+            "Build an internal tax Management System for KPMG.",
+            "Communicat and participated within an agile software development team.",
+            "Hands on experience in developing features in web application.",
+            "Work on technologies of which personally had no prior knowledge.",
         ],
         stacks: [".NET","C#","JQuery", "HTML", "CSS"]
     },

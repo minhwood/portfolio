@@ -1,5 +1,8 @@
 <template>
-  <p :style=actually_margin_bottom>- {{text}}</p>
+    <div class="check-line" :style=actually_margin_bottom>
+        <div class="check-line-head">-</div>
+        <div>{{text}}</div>
+    </div>
 </template>
 
 <script>
@@ -47,5 +50,14 @@ p {
     to {
         opacity: 1;
     }
+}
+
+.check-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.check-line-head {
+    margin-right: 5px;
 }
 </style>

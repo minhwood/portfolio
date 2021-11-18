@@ -27,7 +27,7 @@
                     <br/>
                     <div class="project-role"><span style="font-weight:bold">Role: </span>{{project.role}}</div>
                     <div class="project-contribution" v-for="(line, index) in project.contributions" :key=index>
-                        - {{line}}
+                        <check-line :text="line" />
                     </div>
                     <br>
                     <div class="project-stacks">
@@ -46,11 +46,13 @@
 <script>
 import { bus } from '../../main'
 import StackTag from '../atoms/StackTag'
+import CheckLine from '../atoms/CheckLine'
 
 export default {
     name: 'ProjectDetailModal',
     components:{
-        StackTag
+        StackTag,
+        CheckLine
     },
     props: {
         is_show: {
@@ -77,7 +79,9 @@ export default {
     },
     methods: {
         redirect_to(url) {
-            window.open(url, '_blank')
+            if (url) {
+                window.open(url, '_blank')
+            }
         },
         change_display_mode() {
             bus.$emit('change_jobdetail_display_state', {state:!this.is_show, project:null})
