@@ -8,20 +8,20 @@
             ><location-period :period="period" :location="location"></location-period></education-header>
         
         <div class="education-content row"  :style=display_content>
-            <paragraph :paragraph=descriptions />
+            <check-line v-for="(desc, index) in descriptions" :key=index :text=desc />
         </div>
     </div>
 </template>
 
 <script>
-import Paragraph from '../atoms/Paragraph'
+import CheckLine from '../atoms/CheckLine'
 import EducationHeader from '../atoms/EducationHeader'
 import LocationPeriod from '../atoms/LocationPeriod'
 
 export default {
     name: 'EducationBox',
     components: {
-        Paragraph,
+        CheckLine,
         EducationHeader,
         LocationPeriod
     },
@@ -32,7 +32,7 @@ export default {
         },
         school: String,
         qualification: String,
-        descriptions: String,
+        descriptions: Array,
         location: String,
         period: String
     },

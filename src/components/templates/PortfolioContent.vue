@@ -1,14 +1,19 @@
 <template>
-    <div class="content-box">
-        <div class="container">
+    <div class="content-box" ref="contentBox">
+        <div class="container" ref="myElement">
             <Observer/>
             <about/>
             <skills/>
             <projects/>
             <educations/>
             <experiences/>
-            <job-detail-modal :is_show="job_detail_display_state" />
         </div>
+        <project-detail-modal 
+        :is_show="job_detail_display_state" 
+        :width="container_width" 
+        :padding="container_margin"
+        :project="displaying_project"
+        />
     </div>
 </template>
 <script>
@@ -19,7 +24,8 @@ import Educations from '../organisms/Educations'
 import Skills from '../organisms/Skills'
 import Projects from '../organisms/Projects'
 import Observer from '../atoms/Observer'
-import JobDetailModal from '../molecules/JobDetailModal'
+import ProjectDetailModal from '../molecules/ProjectDetailModal'
+import { ResizeObserver } from 'resize-observer'
 
 export default {
     name:'PortfolioContent',
@@ -30,18 +36,34 @@ export default {
         Skills,
         Projects,
         Observer,
-        JobDetailModal
+        ProjectDetailModal
     },
     data: () => ({
-        job_detail_display_state: false
+        observer: null,
+        job_detail_display_state: false,
+        container_width: 0,
+        container_margin: "0px",
+        displaying_project: null
     }),
     methods: {
-        change_job_detail_modal_state(state) {
+        change_job_detail_modal_state({state, project}) {
             this.job_detail_display_state = state
+            this.displaying_project = project
+        },
+        onResize() {
+            this.container_width = this.$refs.contentBox.offsetWidth
+            this.container_margin = window.getComputedStyle(this.$refs.contentBox, null).getPropertyValue("margin-left")
         }
+    },
+    mounted() {
+        this.observer = new ResizeObserver(this.onResize).observe(this.$refs.contentBox)
     },
     created() {
         bus.$on('change_jobdetail_display_state',(state) => this.change_job_detail_modal_state(state))
+    },
+
+    beforeDestroy() {
+        this.observer.unobserve(this.$refs.myElement)
     }
 }
 </script>

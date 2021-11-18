@@ -144,10 +144,12 @@ export default {
   margin-top:15px;
   margin-right: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .retro-button:hover {
   background-color: darkgray;
+  cursor: pointer;
 }
 
 </style>

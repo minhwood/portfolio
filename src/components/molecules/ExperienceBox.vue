@@ -3,7 +3,8 @@
       <timeline-header :is_final=is_final />
       <div class="experience-content">
         <experiences-header :role=role :company=company :location=location :period=period />
-        <paragraph v-for="(paragraph, index) in descriptions" :key="paragraph[0] + index" :paragraph=paragraph />
+        <CheckLine v-for="(text, index) in descriptions" :key="text[0] + index" :text=text />
+        <br>
         <StackTag v-for="(stack, index) in stacks" :key="index" :stack="stack" />
       </div>
       <div class="empty-padding"></div>
@@ -11,7 +12,7 @@
 </template>
 <script>
 import TimelineHeader from '../atoms/TimelineHeader'
-import Paragraph from '../atoms/Paragraph'
+import CheckLine from '../atoms/CheckLine'
 import ExperiencesHeader from '../atoms/ExperiencesHeader'
 import StackTag from '../atoms/StackTag'
 
@@ -19,7 +20,7 @@ export default {
     name: 'ExperienceBox',
     components:{
         TimelineHeader,
-        Paragraph,
+        CheckLine,
         ExperiencesHeader,
         StackTag
     },
